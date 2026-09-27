@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 导航栏图标浅灰圆底容器：专业 App 常见的柔和图标层 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/bg_neutral_soft" />
+    <corners android:radius="12dp" />
+</shape>

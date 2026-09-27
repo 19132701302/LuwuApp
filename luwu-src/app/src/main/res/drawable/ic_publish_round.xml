@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+    <!-- 圆形底：品牌色渐变 -->
+    <path
+        android:pathData="M28,4 A24,24 0 1,1 27.99,4 Z"
+        android:fillColor="#0D9488" />
+    <path
+        android:pathData="M28,4 A24,24 0 1,1 27.99,4 Z"
+        android:fillColor="#14B8A6"
+        android:fillAlpha="0.35" />
+    <!-- 白色加号 -->
+    <path
+        android:pathData="M30,18 h-4 v10 h-10 v4 h10 v10 h4 v-10 h10 v-4 h-10 Z"
+        android:fillColor="#FFFFFF" />
+</vector>

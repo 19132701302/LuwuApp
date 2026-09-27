@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色模式调色板：与 values/colors.xml 同名覆盖 -->
+    <color name="brand_blue">#2DD4BF</color>
+    <color name="brand_dark">#14B8A6</color>
+    <color name="brand_pressed">#0FA395</color>
+    <color name="brand_soft">#123F3B</color>
+
+    <color name="bg_page">#0F1215</color>
+    <color name="surface">#1A1F24</color>
+    <color name="line">#2A3138</color>
+
+    <color name="ink">#F1F3F5</color>
+    <color name="ink_2">#AAB2BC</color>
+    <color name="ink_3">#6B7280</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="danger">#F87171</color>
+    <color name="ad_bg">#132A27</color>
+    <color name="page_bg">#0F1215</color>
+
+    <color name="nav_selected">#2DD4BF</color>
+    <color name="nav_unselected">#6B7280</color>
+
+    <color name="bg_app">#0F1215</color>
+    <color name="card_shadow">#00000000</color>
+    <color name="tab_indicator">#2DD4BF</color>
+    <color name="chip_bg">#232A31</color>
+    <color name="badge_soft_bg">#123F3B</color>
+    <color name="badge_soft_text">#2DD4BF</color>
+
+    <!-- v7.3 深色模式适配：中性浅底 / 分隔线 / 圆点 -->
+    <color name="bg_neutral_soft">#232A31</color>
+    <color name="line_soft">#2A3138</color>
+    <color name="dot_off">#3A424A</color>
+</resources>
