@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="6dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/BackButton"
+            android:contentDescription="返回"
+            android:padding="11dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/ink_2" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ToolbarTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="文章详情"
+            android:textColor="@color/ink"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_more"
+            style="@style/BackButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/more_actions"
+            android:padding="11dp"
+            android:src="@drawable/ic_more"
+            app:tint="@color/ink_2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_topbar_line" />
+
+    <!-- 顶部加载进度条：详情数据请求期间显示（不确定模式细条） -->
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminate="true"
+        android:progressTint="@color/brand_blue"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 文末广告位：图片/文字二选一 + 右上角关闭按钮（合规可关闭） -->
+    <FrameLayout
+        android:id="@+id/article_ad_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_article_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_ad_round"
+            android:clipToOutline="true"
+            android:contentDescription="@string/ad_label"
+            android:maxHeight="140dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_article_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_banner_light"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:padding="12dp"
+            android:textColor="@color/brand_dark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!-- 广告关闭按钮：右上角，点击后本次详情不再展示 -->
+        <TextView
+            android:id="@+id/btn_ad_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/bg_ad_close"
+            android:gravity="center"
+            android:text="✕"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </FrameLayout>
+
+    <!-- 底部操作栏：左侧评论编辑框 + 右侧点赞/收藏（竖排图标） -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/btn_comment_input"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_comment_input"
+            android:drawableStart="@drawable/ic_comment"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="@string/comment_hint"
+            android:textColor="@color/ink_3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btn_like"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="点赞"
+            android:textColor="@color/ink_2"
+            android:textSize="10.5sp" />
+
+        <TextView
+            android:id="@+id/btn_favorite"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/favorite_added"
+            android:textColor="@color/ink_2"
+            android:textSize="10.5sp" />
+
+        <TextView
+            android:id="@+id/btn_share"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/ink_2"
+            android:textSize="10.5sp" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <!-- 返回顶部悬浮按钮：阅读长文时一键回顶，按钮内实时显示阅读进度 -->
+    <FrameLayout
+        android:id="@+id/btn_back_top"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/bg_back_top"
+        android:elevation="6dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_read_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="1dp"
+                android:contentDescription="返回顶部"
+                android:src="@drawable/ic_back_top" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

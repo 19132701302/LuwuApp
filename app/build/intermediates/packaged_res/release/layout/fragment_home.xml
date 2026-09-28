@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部导航：左头像 / 中标题 / 右搜索（固定不滚动） -->
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp">
+
+                <!-- 左区：头像（与右侧按钮区等宽，保证标题真正居中） -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical">
+
+                    <FrameLayout
+                        android:id="@+id/btn_avatar"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/bg_logo_round"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/iv_avatar_initial"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/avatar"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_avatar_initial"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="陆"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 中区：品牌标题（真正居中） -->
+                <TextView
+                    android:id="@+id/tv_logo_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/ink"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <!-- 右区：搜索 + 铃铛 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical">
+
+                    <FrameLayout
+                        android:id="@+id/btn_search"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/bg_search_round"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/search_hint"
+                            android:src="@drawable/ic_search"
+                            app:tint="@color/ink_2" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_bell"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/bg_search_round"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="19dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/notify_center"
+                            android:src="@drawable/ic_notify"
+                            app:tint="@color/ink_2" />
+
+                        <TextView
+                            android:id="@+id/tv_bell_badge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|end"
+                            android:background="@drawable/bg_badge_red"
+                            android:gravity="center"
+                            android:minWidth="16dp"
+                            android:paddingHorizontal="4dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <!-- 滚动区：轮播 → 广告 → 文章，整体上下滚动 -->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/home_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+                    <!-- 左右滚动轮播图 -->
+                    <FrameLayout
+                        android:id="@+id/banner_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="12dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/banner_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:overScrollMode="never"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp" />
+
+                        <LinearLayout
+                            android:id="@+id/banner_dots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal" />
+                    </FrameLayout>
+
+                    <!-- 频道 Tab 栏（头条式：横向滚动分类，点击切换信息流） -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/home_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp" />
+
+                    <!-- 首页广告位（文字/图片，固定高度不跳动） -->
+                    <!-- 首页广告位：图片按比例完整显示，文字固定高度 -->
+                    <FrameLayout
+                        android:id="@+id/home_ad_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_home_ad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/bg_ad_round"
+                            android:clipToOutline="true"
+                            android:contentDescription="@string/ad_label"
+                            android:maxHeight="240dp"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_home_ad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="56dp"
+                            android:background="@drawable/bg_banner"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="14dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/bg_ad_badge"
+                            android:paddingHorizontal="7dp"
+                            android:paddingVertical="2dp"
+                            android:text="@string/ad_label"
+                            android:textColor="@color/white"
+                            android:textSize="9sp" />
+                    </FrameLayout>
+
+                    <!-- 排序筛选栏：最新 / 热门 / 评论最多 / 点赞最多 -->
+                    <LinearLayout
+                        android:id="@+id/sort_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="16dp"
+                        android:paddingTop="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="排序"
+                            android:textColor="@color/ink_3"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/sort_latest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_sort_on"
+                            android:gravity="center"
+                            android:paddingHorizontal="14dp"
+                            android:text="最新"
+                            android:textColor="@color/white"
+                            android:textSize="11.5sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sort_hot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_sort_off"
+                            android:gravity="center"
+                            android:paddingHorizontal="14dp"
+                            android:text="热门"
+                            android:textColor="@color/ink_2"
+                            android:textSize="11.5sp" />
+
+                        <TextView
+                            android:id="@+id/sort_comments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_sort_off"
+                            android:gravity="center"
+                            android:paddingHorizontal="14dp"
+                            android:text="评论最多"
+                            android:textColor="@color/ink_2"
+                            android:textSize="11.5sp" />
+
+                        <TextView
+                            android:id="@+id/sort_likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_sort_off"
+                            android:gravity="center"
+                            android:paddingHorizontal="14dp"
+                            android:text="点赞最多"
+                            android:textColor="@color/ink_2"
+                            android:textSize="11.5sp" />
+                    </LinearLayout>
+
+                    <!-- 文章信息流 -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingTop="10dp" />
+
+                    <!-- 骨架屏：首屏加载占位（数据到达后隐藏） -->
+                    <LinearLayout
+                        android:id="@+id/skeleton_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <include layout="@layout/item_skeleton" />
+                        <include layout="@layout/item_skeleton" />
+                        <include layout="@layout/item_skeleton" />
+                        <include layout="@layout/item_skeleton" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <!-- 错误提示（覆盖内容区） -->
+        <LinearLayout
+            android:id="@+id/error_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:contentDescription="@string/error_title"
+                android:src="@drawable/ic_error_outline"
+                app:tint="@color/ink_3" />
+
+            <TextView
+                android:id="@+id/tv_error_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="@string/error_title"
+                android:textColor="@color/ink"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_error_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/ink_3"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_retry"
+                    android:layout_width="96dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_button_primary"
+                    android:gravity="center"
+                    android:text="@string/retry"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_open_browser"
+                    android:layout_width="124dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/bg_button_secondary"
+                    android:gravity="center"
+                    android:text="@string/open_browser"
+                    android:textColor="@color/brand_blue"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/bg_page"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="6dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/BackButton"
+            android:contentDescription="返回"
+            android:src="@drawable/ic_back"
+            app:tint="@color/ink_2" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ToolbarTitle"
+            android:text="列表" />
+    </LinearLayout>
+
+    <!-- 排序栏：最新 / 热门 / 评论最多 / 点赞最多（分类模式） -->
+    <LinearLayout
+        android:id="@+id/sort_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:id="@+id/sort_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@drawable/bg_sort_on"
+            android:gravity="center"
+            android:paddingHorizontal="14dp"
+            android:text="最新"
+            android:textColor="@color/white"
+            android:textSize="11.5sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sort_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_sort_off"
+            android:gravity="center"
+            android:paddingHorizontal="14dp"
+            android:text="热门"
+            android:textColor="@color/ink_2"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:id="@+id/sort_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_sort_off"
+            android:gravity="center"
+            android:paddingHorizontal="14dp"
+            android:text="评论最多"
+            android:textColor="@color/ink_2"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:id="@+id/sort_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_sort_off"
+            android:gravity="center"
+            android:paddingHorizontal="14dp"
+            android:text="点赞最多"
+            android:textColor="@color/ink_2"
+            android:textSize="11.5sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_top_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ad_label"
+        android:maxHeight="140dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_top_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_banner"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:padding="13dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="2dp"
+            android:paddingBottom="12dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- 空态：图标 + 文案 + 引导按钮 -->
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:alpha="0.55"
+            android:contentDescription="暂无内容"
+            android:src="@drawable/ic_empty_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="这里还空空如也"
+            android:textColor="@color/ink_2"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="去看看更多优质内容吧"
+            android:textColor="@color/ink_3"
+            android:textSize="12.5sp" />
+
+        <TextView
+            android:id="@+id/btn_empty_go_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_primary"
+            android:gravity="center"
+            android:paddingHorizontal="26dp"
+            android:paddingVertical="10dp"
+            android:text="去首页逛逛"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

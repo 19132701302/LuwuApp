@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ad_bg">#F4FAF9</color>
+    <color name="badge_soft_bg">#E4F2F0</color>
+    <color name="badge_soft_text">#0F766E</color>
+    <color name="bg_app">#F7F7F8</color>
+    <color name="bg_neutral_soft">#F2F3F5</color>
+    <color name="bg_page">#F7F7F8</color>
+    <color name="brand">#0F766E</color>
+    <color name="brand_active">#14B8A6</color>
+    <color name="brand_blue">#0F766E</color>
+    <color name="brand_dark">#115E59</color>
+    <color name="brand_deep">#115E59</color>
+    <color name="brand_ink">#134E4A</color>
+    <color name="brand_pressed">#0C645D</color>
+    <color name="brand_red">#D92D20</color>
+    <color name="brand_soft">#E4F2F0</color>
+    <color name="card_shadow">#120F766E</color>
+    <color name="cat_a_bg">#E4F2F0</color>
+    <color name="cat_a_fg">#0F766E</color>
+    <color name="cat_b_bg">#E9F0FA</color>
+    <color name="cat_b_fg">#3B5FBF</color>
+    <color name="cat_c_bg">#F4EEE4</color>
+    <color name="cat_c_fg">#A4622A</color>
+    <color name="cat_d_bg">#F2EAF3</color>
+    <color name="cat_d_fg">#7A4A8C</color>
+    <color name="chip_bg">#F2F3F5</color>
+    <color name="danger">#D92D20</color>
+    <color name="dot_off">#D9DCE1</color>
+    <color name="ic_launcher_background">#0D9488</color>
+    <color name="info">#175CD3</color>
+    <color name="ink">#111214</color>
+    <color name="ink_2">#5C6166</color>
+    <color name="ink_3">#9CA1A8</color>
+    <color name="ink_4">#C2C6CC</color>
+    <color name="line">#EDEEF0</color>
+    <color name="line_soft">#F0F1F3</color>
+    <color name="line_strong">#E2E4E7</color>
+    <color name="nav_selected">#0F766E</color>
+    <color name="nav_unselected">#9CA1A8</color>
+    <color name="page_bg">#F7F7F8</color>
+    <color name="success">#12B76A</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alt">#F2F3F5</color>
+    <color name="tab_indicator">#0F766E</color>
+    <color name="warning">#F79009</color>
+    <color name="white">#FFFFFF</color>
+    <string name="about">关于</string>
+    <string name="ad_label">广告</string>
+    <string name="ad_video_label">视频广告，点击播放</string>
+    <string name="announcement">公告</string>
+    <string name="app_name">陆伍博客</string>
+    <string name="app_tagline">你的互联网资源库</string>
+    <string name="avatar">头像</string>
+    <string name="biz_intro">陆伍官网（65gw.com）创立于 2026 年 1 月，是一个专注于网络搜集各种网站资源、源码分享和技术教程分享的博客资源网站，全面打造汇集全网最新最全免费资源分享和技术资源交流社区。</string>
+    <string name="biz_notice">1. 本站用户活跃度、点击量领先同行，广告价格偏高但效果绝对不错。\n2. 广告不提供试用，款到账后开始投放。\n3. 本站不负责广告图片制作，请自备图片。\n4. 图片广告价格会不定期调整，具体以咨询客服为准。\n5. 最低 1 个月起投，多月投放可适当优惠，投放期限最长不超过 12 个月。</string>
+    <string name="business_coop">商务合作</string>
+    <string name="category">分类</string>
+    <string name="check_update">检查更新</string>
+    <string name="comment_hint">说点什么…</string>
+    <string name="downloading">开始下载新版本，完成后请点击通知安装</string>
+    <string name="empty">这里还什么都没有</string>
+    <string name="error_hint">可能是网络问题，或网站暂时不可达</string>
+    <string name="error_title">暂时连不上陆伍博客</string>
+    <string name="fav_empty">还没有收藏文章
+去文章详情页点亮收藏吧</string>
+    <string name="favorite_added">已收藏</string>
+    <string name="favorite_removed">已取消收藏</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_tip">反馈会在 1-3 个工作日内处理，紧急问题请直接联系站长 QQ 615806139</string>
+    <string name="got_it">知道了</string>
+    <string name="home">首页</string>
+    <string name="load_more">加载更多</string>
+    <string name="loading">加载中…</string>
+    <string name="login_now">去登录</string>
+    <string name="login_title">账号登录</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_confirm">确定要退出登录吗？</string>
+    <string name="more_actions">更多操作</string>
+    <string name="my_favorites">我的收藏</string>
+    <string name="my_follows">我的关注</string>
+    <string name="my_history">浏览历史</string>
+    <string name="my_orders">我的订单</string>
+    <string name="my_posts">我的发布</string>
+    <string name="network_error">连接失败，请检查网络后重试</string>
+    <string name="no_more">没有更多了</string>
+    <string name="not_login">尚未登录</string>
+    <string name="notify_center">消息中心</string>
+    <string name="open_browser">用浏览器打开</string>
+    <string name="open_original">查看原文</string>
+    <string name="password">密码</string>
+    <string name="plugin_missing">数据接口未就绪：请确认网站已安装并启用「陆伍App控制台」插件</string>
+    <string name="post_category">分类</string>
+    <string name="post_content">正文内容</string>
+    <string name="post_tags">标签（多个用英文逗号分隔，可选）</string>
+    <string name="post_title">标题</string>
+    <string name="profile">我的</string>
+    <string name="publish">发布</string>
+    <string name="publish_post">发布文章</string>
+    <string name="register_hint">还没有账号？去网站注册</string>
+    <string name="retry">重试</string>
+    <string name="sc_tip">支持短代码：提示框 / 引用 / 网盘下载 / 图片 / 链接 / 代码块，发布后自动渲染</string>
+    <string name="search_hint">搜资源、教程、软件…</string>
+    <string name="settings">设置</string>
+    <string name="share">分享</string>
+    <string name="splash_cta">点击进入活动页</string>
+    <string name="submit">提交</string>
+    <string name="theme_color">顶部导航颜色</string>
+    <string name="theme_color_hint">选择后立即生效</string>
+    <string name="theme_restore_default">恢复默认</string>
+    <string name="theme_saved">已应用</string>
+    <string name="update_available">发现新版本</string>
+    <string name="update_later">稍后再说</string>
+    <string name="update_now">立即更新</string>
+    <string name="username">用户名 / 邮箱</string>
+    <string name="view_detail">查看详情</string>
+    <string name="website">访问官网</string>
+    <style name="BackButton">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+    <style name="MenuRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:background">@color/surface</item>
+    </style>
+    <style name="NavNoActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+    <style name="NavTextSmall">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.LuWu" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/brand_soft</item>
+        <item name="colorOnPrimaryContainer">@color/brand_ink</item>
+        <item name="colorSecondary">@color/brand_active</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/brand_soft</item>
+        <item name="colorOnSecondaryContainer">@color/brand_ink</item>
+
+        
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorSurfaceVariant">@color/surface_alt</item>
+        <item name="colorOnSurfaceVariant">@color/ink_2</item>
+        <item name="colorOutline">@color/line_strong</item>
+        <item name="colorOutlineVariant">@color/line</item>
+        <item name="colorSurfaceContainer">@color/surface</item>
+        <item name="colorSurfaceContainerHigh">@color/surface</item>
+        <item name="colorSurfaceContainerHighest">@color/surface_alt</item>
+        <item name="colorSurfaceContainerLow">@color/bg_page</item>
+        <item name="colorSurfaceContainerLowest">@color/surface</item>
+
+        
+        <item name="colorError">@color/danger</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:colorAccent">@color/brand</item>
+        <item name="android:colorControlActivated">@color/brand</item>
+        <item name="android:colorControlHighlight">@color/line_strong</item>
+
+        
+        <item name="android:windowBackground">@color/bg_page</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowSplashScreenBackground">@color/bg_page</item>
+
+        
+        <item name="android:textColorPrimary">@color/ink</item>
+        <item name="android:textColorSecondary">@color/ink_2</item>
+        <item name="android:textColorTertiary">@color/ink_3</item>
+        <item name="android:textColorHint">@color/ink_3</item>
+        <item name="android:textColorLink">@color/brand</item>
+
+        
+        <item name="android:listDivider">@color/line</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="ToolbarTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

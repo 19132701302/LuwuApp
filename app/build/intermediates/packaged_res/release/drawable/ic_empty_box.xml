@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- 简约空态：打开的空箱 + 盖 -->
+    <path
+        android:pathData="M14,26 h36 v6 a6,6 0 0,1 -6,6 h-24 a6,6 0 0,1 -6,-6 Z"
+        android:fillColor="#D8DCE2" />
+    <path
+        android:pathData="M14,30 h36 l-4,-12 h-28 Z"
+        android:fillColor="#C2C8D0" />
+    <path
+        android:pathData="M22,22 h20 l-2,4 h-16 Z"
+        android:fillColor="#AAB2BC" />
+</vector>

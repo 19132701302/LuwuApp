@@ -1,0 +1,303 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.luwu.app"
+4    android:versionCode="66"
+5    android:versionName="9.4" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+12-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:5:5-83
+12-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:5:22-80
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:6:5-79
+13-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:7:5-77
+14-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:7:22-74
+15    <!-- 长按保存详情页图片到相册（Android 9 及以下需要；10+ 走 MediaStore 无需权限） -->
+16    <uses-permission
+16-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:9:5-11:38
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:10:9-65
+18        android:maxSdkVersion="28" />
+18-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:11:9-35
+19
+20    <permission
+20-->[androidx.core:core:1.12.0] /home/user/.gradle/caches/transforms-3/4dde0fce54f6341b6da19770f76a2130/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+21        android:name="com.luwu.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.12.0] /home/user/.gradle/caches/transforms-3/4dde0fce54f6341b6da19770f76a2130/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.12.0] /home/user/.gradle/caches/transforms-3/4dde0fce54f6341b6da19770f76a2130/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.luwu.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.12.0] /home/user/.gradle/caches/transforms-3/4dde0fce54f6341b6da19770f76a2130/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.12.0] /home/user/.gradle/caches/transforms-3/4dde0fce54f6341b6da19770f76a2130/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:13:5-68:19
+27        android:name="com.luwu.app.App"
+27-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:14:9-28
+28        android:allowBackup="false"
+28-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:15:9-36
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.12.0] /home/user/.gradle/caches/transforms-3/4dde0fce54f6341b6da19770f76a2130/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+30        android:extractNativeLibs="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:16:9-43
+32        android:label="@string/app_name"
+32-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:17:9-41
+33        android:supportsRtl="true"
+33-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:18:9-35
+34        android:theme="@style/Theme.LuWu"
+34-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:19:9-42
+35        android:usesCleartextTraffic="false" >
+35-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:20:9-45
+36        <activity
+36-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:22:9-30:20
+37            android:name="com.luwu.app.ui.SplashAdActivity"
+37-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:23:13-48
+38            android:exported="true"
+38-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:24:13-36
+39            android:theme="@style/Theme.LuWu" >
+39-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:25:13-46
+40            <intent-filter>
+40-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:26:13-29:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:27:17-69
+41-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:27:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:28:17-77
+43-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:28:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:32:9-36:58
+47            android:name="com.luwu.app.MainActivity"
+47-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:33:13-41
+48            android:exported="true"
+48-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:34:13-36
+49            android:launchMode="singleTop"
+49-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:35:13-43
+50            android:windowSoftInputMode="adjustResize" />
+50-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:36:13-55
+51        <activity
+51-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:38:9-87
+52            android:name="com.luwu.app.ui.ArticleDetailActivity"
+52-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:38:19-59
+53            android:exported="false" />
+53-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:38:60-84
+54        <activity
+54-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:39:9-87
+55            android:name="com.luwu.app.ui.CategoryPostsActivity"
+55-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:39:19-59
+56            android:exported="false" />
+56-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:39:60-84
+57        <activity
+57-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:40:9-123
+58            android:name="com.luwu.app.ui.SearchActivity"
+58-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:40:19-52
+59            android:exported="false"
+59-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:40:53-77
+60            android:windowSoftInputMode="adjustResize" />
+60-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:40:78-120
+61        <activity
+61-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:41:9-122
+62            android:name="com.luwu.app.ui.LoginActivity"
+62-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:41:19-51
+63            android:exported="false"
+63-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:41:52-76
+64            android:windowSoftInputMode="adjustResize" />
+64-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:41:77-119
+65        <activity
+65-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:42:9-125
+66            android:name="com.luwu.app.ui.CommentsActivity"
+66-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:42:19-54
+67            android:exported="false"
+67-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:42:55-79
+68            android:windowSoftInputMode="adjustResize" />
+68-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:42:80-122
+69        <activity
+69-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:43:9-124
+70            android:name="com.luwu.app.ui.PublishActivity"
+70-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:43:19-53
+71            android:exported="false"
+71-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:43:54-78
+72            android:windowSoftInputMode="adjustResize" />
+72-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:43:79-121
+73        <activity
+73-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:44:9-83
+74            android:name="com.luwu.app.ui.FavoritesActivity"
+74-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:44:19-55
+75            android:exported="false" />
+75-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:44:56-80
+76        <activity
+76-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:45:9-81
+77            android:name="com.luwu.app.ui.HistoryActivity"
+77-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:45:19-53
+78            android:exported="false" />
+78-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:45:54-78
+79        <activity
+79-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:46:9-81
+80            android:name="com.luwu.app.ui.MyPostsActivity"
+80-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:46:19-53
+81            android:exported="false" />
+81-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:46:54-78
+82        <activity
+82-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:47:9-79
+83            android:name="com.luwu.app.ui.AboutActivity"
+83-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:47:19-51
+84            android:exported="false" />
+84-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:47:52-76
+85        <activity
+85-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:48:9-81
+86            android:name="com.luwu.app.ui.PrivacyActivity"
+86-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:48:19-53
+87            android:exported="false" />
+87-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:48:54-78
+88        <activity
+88-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:49:9-84
+89            android:name="com.luwu.app.ui.FollowListActivity"
+89-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:49:19-56
+90            android:exported="false" />
+90-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:49:57-81
+91        <activity
+91-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:50:9-85
+92            android:name="com.luwu.app.ui.UserProfileActivity"
+92-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:50:19-57
+93            android:exported="false" />
+93-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:50:58-82
+94        <activity
+94-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:51:9-80
+95            android:name="com.luwu.app.ui.NotifyActivity"
+95-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:51:19-52
+96            android:exported="false" />
+96-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:51:53-77
+97        <activity
+97-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:52:9-82
+98            android:name="com.luwu.app.ui.FeedbackActivity"
+98-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:52:19-54
+99            android:exported="false" />
+99-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:52:55-79
+100        <activity
+100-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:53:9-86
+101            android:name="com.luwu.app.ui.BusinessCoopActivity"
+101-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:53:19-58
+102            android:exported="false" />
+102-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:53:59-83
+103        <activity
+103-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:54:9-82
+104            android:name="com.luwu.app.ui.SettingsActivity"
+104-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:54:19-54
+105            android:exported="false" />
+105-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:54:55-79
+106        <activity
+106-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:55:9-81
+107            android:name="com.luwu.app.ui.WebPageActivity"
+107-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:55:19-53
+108            android:exported="false" />
+108-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:55:54-78
+109        <activity
+109-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:56:9-84
+110            android:name="com.luwu.app.ui.PayWebViewActivity"
+110-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:56:19-56
+111            android:exported="false" />
+111-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:56:57-81
+112        <activity
+112-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:57:9-79
+113            android:name="com.luwu.app.ui.OrderActivity"
+113-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:57:19-51
+114            android:exported="false" />
+114-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:57:52-76
+115
+116        <provider
+116-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:59:9-67:20
+117            android:name="androidx.core.content.FileProvider"
+117-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:60:13-62
+118            android:authorities="com.luwu.app.fileprovider"
+118-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:61:13-60
+119            android:exported="false"
+119-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:62:13-37
+120            android:grantUriPermissions="true" >
+120-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:63:13-47
+121            <meta-data
+121-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:64:13-66:54
+122                android:name="android.support.FILE_PROVIDER_PATHS"
+122-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:65:17-67
+123                android:resource="@xml/file_paths" />
+123-->/home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/src/main/AndroidManifest.xml:66:17-51
+124        </provider>
+125        <provider
+125-->[androidx.emoji2:emoji2:1.2.0] /home/user/.gradle/caches/transforms-3/ebd7e8b0739ea5852a86f1ec4bdee03d/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+126            android:name="androidx.startup.InitializationProvider"
+126-->[androidx.emoji2:emoji2:1.2.0] /home/user/.gradle/caches/transforms-3/ebd7e8b0739ea5852a86f1ec4bdee03d/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+127            android:authorities="com.luwu.app.androidx-startup"
+127-->[androidx.emoji2:emoji2:1.2.0] /home/user/.gradle/caches/transforms-3/ebd7e8b0739ea5852a86f1ec4bdee03d/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+128            android:exported="false" >
+128-->[androidx.emoji2:emoji2:1.2.0] /home/user/.gradle/caches/transforms-3/ebd7e8b0739ea5852a86f1ec4bdee03d/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+129            <meta-data
+129-->[androidx.emoji2:emoji2:1.2.0] /home/user/.gradle/caches/transforms-3/ebd7e8b0739ea5852a86f1ec4bdee03d/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+130-->[androidx.emoji2:emoji2:1.2.0] /home/user/.gradle/caches/transforms-3/ebd7e8b0739ea5852a86f1ec4bdee03d/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+131                android:value="androidx.startup" />
+131-->[androidx.emoji2:emoji2:1.2.0] /home/user/.gradle/caches/transforms-3/ebd7e8b0739ea5852a86f1ec4bdee03d/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+132            <meta-data
+132-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/user/.gradle/caches/transforms-3/6f56f1e43121291421b10fb7d5934740/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+133-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/user/.gradle/caches/transforms-3/6f56f1e43121291421b10fb7d5934740/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+134                android:value="androidx.startup" />
+134-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/user/.gradle/caches/transforms-3/6f56f1e43121291421b10fb7d5934740/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+135            <meta-data
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+136                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+137                android:value="androidx.startup" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+138        </provider>
+139
+140        <receiver
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+141            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+142            android:directBootAware="false"
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+143            android:enabled="true"
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+144            android:exported="true"
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+145            android:permission="android.permission.DUMP" >
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+147                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+150                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+151            </intent-filter>
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+153                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+154            </intent-filter>
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+156                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/19e15dbf13abf551346cc809eecbb624/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+157            </intent-filter>
+158        </receiver>
+159    </application>
+160
+161</manifest>
