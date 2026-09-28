@@ -19568,6 +19568,7 @@ com.luwu.app.util.Util$renderContent$2
 com.luwu.app.util.Util$renderContent$3
 com.luwu.app.util.Util:
     public static synthetic java.lang.String buildDetailHtml$default(com.luwu.app.util.Util,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,int,java.lang.Object)
+    public final boolean isDarkTheme(int)
     public final java.lang.String renderContent(java.lang.String)
     public final void showKeyboard(android.content.Context,android.view.View)
     public final java.lang.String statsText(com.luwu.app.api.PostItem)
@@ -35884,6 +35885,8 @@ com.luwu.app.ui.HomeFragment$onViewCreated$7
 com.luwu.app.ui.HomeFragment$onViewCreated$8
 com.luwu.app.ui.HomeFragment$onViewCreated$onBottom$1
 com.luwu.app.ui.HomeFragment$onViewCreated$updateBackTop$1
+com.luwu.app.ui.HomeFragment$onViewCreated$updateTopBar$1:
+    public final void invoke()
 com.luwu.app.ui.HomeFragment$refreshBellBadge$1
 com.luwu.app.ui.HomeFragment:
     public static final void access$openDetail(com.luwu.app.ui.HomeFragment,com.luwu.app.api.PostItem)
@@ -36176,7 +36179,7 @@ com.luwu.app.util.Prefs:
     public static java.lang.String getSplashNextSkipText()
     public static java.lang.String getSplashNextTarget()
     public static java.lang.String getSplashNextUrl(android.content.Context)
-    public static int getThemeColor(android.content.Context)
+    public static int getThemeColor()
     public static java.lang.String getThemeColorHex(com.luwu.app.ui.SettingsActivity)
     public static java.lang.String getToken(android.content.Context)
     public static long getUid(com.luwu.app.ui.UserProfileActivity)
@@ -36226,7 +36229,6 @@ com.luwu.app.util.Util:
     public static java.lang.String buildDetailHtml()
     public static long getCacheSize()
     public static boolean isDarkColor()
-    public static boolean isDarkTheme()
 kotlin.ExceptionsKt
 kotlin.ExceptionsKt__ExceptionsKt
 kotlin.Lazy
@@ -36635,6 +36637,7 @@ okhttp3.Call:
 okhttp3.CertificatePinner$Builder
 okhttp3.CertificatePinner$Companion
 okhttp3.CertificatePinner$Pin
+okhttp3.CertificatePinner$check$1
 okhttp3.CertificatePinner:
     public static final androidx.savedstate.SavedStateRegistryController$Companion Companion
     public static void check()

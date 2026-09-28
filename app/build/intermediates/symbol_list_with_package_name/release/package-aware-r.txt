@@ -3001,6 +3001,7 @@ drawable bg_splash_scrim
 drawable bg_stats_gradient
 drawable bg_tab_indicator
 drawable bg_thumb_round
+drawable bg_top_bar_solid
 drawable bg_top_grad_teal
 drawable bg_topbar_line
 drawable btn_checkbox_checked_mtrl

@@ -35,12 +35,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 状态栏跟随主题色
-        val theme = com.luwu.app.util.Prefs.getThemeColor(this)
-        window.statusBarColor = theme
-        if (com.luwu.app.util.Util.isDarkTheme(theme)) {
-            window.decorView.systemUiVisibility = 0
-        }
+        // 状态栏沉浸透明（主题已置 statusBarColor=transparent），内容延伸到状态栏下
+        // 状态栏图标保持深色（windowLightStatusBar=true 由主题控制）
 
         bottomNav = findViewById(R.id.bottom_nav)
         // 底部导航选中色跟随设置页主题色
