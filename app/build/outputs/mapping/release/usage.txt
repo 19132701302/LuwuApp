@@ -19264,6 +19264,7 @@ com.luwu.app.R$drawable:
     public static int bg_stats_gradient
     public static int bg_tab_indicator
     public static int bg_thumb_round
+    public static int bg_top_bar_solid
     public static int bg_top_grad_teal
     public static int bg_topbar_line
     public static int ic_about
@@ -35885,8 +35886,6 @@ com.luwu.app.ui.HomeFragment$onViewCreated$7
 com.luwu.app.ui.HomeFragment$onViewCreated$8
 com.luwu.app.ui.HomeFragment$onViewCreated$onBottom$1
 com.luwu.app.ui.HomeFragment$onViewCreated$updateBackTop$1
-com.luwu.app.ui.HomeFragment$onViewCreated$updateTopBar$1:
-    public final void invoke()
 com.luwu.app.ui.HomeFragment$refreshBellBadge$1
 com.luwu.app.ui.HomeFragment:
     public static final void access$openDetail(com.luwu.app.ui.HomeFragment,com.luwu.app.api.PostItem)
@@ -36637,7 +36636,6 @@ okhttp3.Call:
 okhttp3.CertificatePinner$Builder
 okhttp3.CertificatePinner$Companion
 okhttp3.CertificatePinner$Pin
-okhttp3.CertificatePinner$check$1
 okhttp3.CertificatePinner:
     public static final androidx.savedstate.SavedStateRegistryController$Companion Companion
     public static void check()

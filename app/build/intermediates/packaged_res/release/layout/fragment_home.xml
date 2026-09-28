@@ -10,14 +10,140 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- 顶部导航：左头像 / 中标题 / 右搜索（固定不滚动） -->
-        
+        <!-- 顶部导航：左头像 / 中标题 / 右搜索（透明背景，固定不滚动） -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
 
+android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp">
+
+                <!-- 左区：头像（与右侧按钮区等宽，保证标题真正居中） -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical">
+
+                    <FrameLayout
+                        android:id="@+id/btn_avatar"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/bg_logo_round"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/iv_avatar_initial"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/avatar"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_avatar_initial"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="陆"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 中区：品牌标题（真正居中） -->
+                <TextView
+                    android:id="@+id/tv_logo_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/ink"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <!-- 右区：搜索 + 铃铛 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical">
+
+                    <FrameLayout
+                        android:id="@+id/btn_search"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/bg_search_round"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/search_hint"
+                            android:src="@drawable/ic_search"
+                            app:tint="@color/ink_2" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_bell"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/bg_search_round"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="19dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/notify_center"
+                            android:src="@drawable/ic_notify"
+                            app:tint="@color/ink_2" />
+
+                        <TextView
+                            android:id="@+id/tv_bell_badge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|end"
+                            android:background="@drawable/bg_badge_red"
+                            android:gravity="center"
+                            android:minWidth="16dp"
+                            android:paddingHorizontal="4dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
         <!-- 滚动区：轮播 → 广告 → 文章，整体上下滚动 -->
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp">
+            android:layout_weight="1"
 
             <androidx.core.widget.NestedScrollView
                 android:id="@+id/home_scroll"
@@ -278,136 +404,8 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+    </LinearLayout>
 
-        <!-- 顶部导航（沉浸透明悬浮层）：打开时浮在轮播图上，滚动后由代码切换为实底 -->
-    <LinearLayout
-        android:id="@+id/top_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:orientation="vertical"
-        android:paddingTop="26dp">
-
-android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingHorizontal="12dp">
-
-                <!-- 左区：头像（与右侧按钮区等宽，保证标题真正居中） -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="start|center_vertical">
-
-                    <FrameLayout
-                        android:id="@+id/btn_avatar"
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:background="@drawable/bg_logo_round"
-                        android:foreground="?attr/selectableItemBackgroundBorderless"
-                        android:clickable="true"
-                        android:focusable="true">
-
-                        <ImageView
-                            android:id="@+id/iv_avatar_initial"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:contentDescription="@string/avatar"
-                            android:scaleType="centerCrop"
-                            android:visibility="gone" />
-
-                        <TextView
-                            android:id="@+id/tv_avatar_initial"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="陆"
-                            android:textColor="@color/white"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-                </LinearLayout>
-
-                <!-- 中区：品牌标题（真正居中） -->
-                <TextView
-                    android:id="@+id/tv_logo_brand"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/app_name"
-                    android:textColor="@color/ink"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <!-- 右区：搜索 + 铃铛 -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="end|center_vertical">
-
-                    <FrameLayout
-                        android:id="@+id/btn_search"
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:background="@drawable/bg_search_round"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?attr/selectableItemBackgroundBorderless">
-
-                        <ImageView
-                            android:layout_width="18dp"
-                            android:layout_height="18dp"
-                            android:layout_gravity="center"
-                            android:contentDescription="@string/search_hint"
-                            android:src="@drawable/ic_search"
-                            app:tint="@color/ink_2" />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/btn_bell"
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:layout_marginStart="4dp"
-                        android:background="@drawable/bg_search_round"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:foreground="?attr/selectableItemBackgroundBorderless">
-
-                        <ImageView
-                            android:layout_width="19dp"
-                            android:layout_height="19dp"
-                            android:layout_gravity="center"
-                            android:contentDescription="@string/notify_center"
-                            android:src="@drawable/ic_notify"
-                            app:tint="@color/ink_2" />
-
-                        <TextView
-                            android:id="@+id/tv_bell_badge"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="top|end"
-                            android:background="@drawable/bg_badge_red"
-                            android:gravity="center"
-                            android:minWidth="16dp"
-                            android:paddingHorizontal="4dp"
-                            android:text=""
-                            android:textColor="@color/white"
-                            android:textSize="9sp"
-                            android:visibility="gone" />
-                    </FrameLayout>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
 
     <!-- 回到顶部悬浮按钮（仅首页）：滚动后显示，点击平滑回顶 -->
     <FrameLayout

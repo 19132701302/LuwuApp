@@ -211,6 +211,10 @@ object Util {
               .joe-note.success{background:#F0FAF0;color:#2F7D32;border-color:#66BB6A}
               .joe-note.error{background:#FEF1F0;color:#C62828;border-color:#EF5350}
               .joe-note.warning{background:#FFF8E6;color:#B26A00;border-color:#FFC53D}
+              .paid-hidden{display:flex;align-items:center;gap:12px;border-radius:12px;padding:16px;margin:14px 0;background:var(--paid-bg);border:1px dashed var(--line);text-align:left}
+              .paid-hidden .paid-hidden-lock{font-size:24px;flex:none}
+              .paid-hidden b{display:block;font-size:14.5px;color:var(--name)}
+              .paid-hidden i{display:block;margin-top:2px;font-size:12.5px;color:var(--ink-3);font-style:normal}
               .joe-alert{border-left:4px solid #0F766E;background:#E4F2F0;border-radius:0 8px 8px 0}
               .joe-alert.success{border-color:#66BB6A;background:#F0FAF0}
               .joe-alert.error{border-color:#EF5350;background:#FEF1F0}

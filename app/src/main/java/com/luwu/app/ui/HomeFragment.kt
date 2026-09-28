@@ -79,14 +79,6 @@ class HomeFragment : Fragment() {
             (activity as? MainActivity)?.switchToProfile()
         }
         refreshAvatar()
-        // 沉浸透明顶部栏：状态栏高度自适应 + 初始透明（浮在轮播图上）
-        val topBar = view.findViewById<android.view.ViewGroup>(R.id.top_bar)
-        if (topBar != null) {
-            val resId = resources.getIdentifier("status_bar_height", "dimen", "android")
-            val sbh = if (resId > 0) resources.getDimensionPixelSize(resId) else dp(26)
-            topBar.setPadding(0, sbh, 0, 0)
-            topBar.background = null
-        }
         bindHomeCats(view)
         view.findViewById<View>(R.id.btn_retry).setOnClickListener {
             hideErrorView()
@@ -122,30 +114,15 @@ class HomeFragment : Fragment() {
             val show = scrollView.scrollY > 800
             btnBackTop?.visibility = if (show) View.VISIBLE else View.GONE
         }
-        // 沉浸顶栏：顶部透明（露出轮播图）→ 滚动后实底白（不遮挡内容，头条式）
-        val updateTopBar = {
-            val tb = view.findViewById<View>(R.id.top_bar)
-            if (tb != null) {
-                if (scrollView.scrollY > 4) {
-                    tb.background = resources.getDrawable(R.drawable.bg_top_bar_solid, null)
-                    tb.elevation = 2f
-                } else {
-                    tb.background = null
-                    tb.elevation = 0f
-                }
-            }
-        }
         if (android.os.Build.VERSION.SDK_INT >= 23) {
             scrollView.setOnScrollChangeListener { _, _, _, _, _ ->
                 onBottom()
                 updateBackTop()
-                updateTopBar()
             }
         } else {
             scrollView.viewTreeObserver.addOnScrollChangedListener {
                 onBottom()
                 updateBackTop()
-                updateTopBar()
             }
         }
 

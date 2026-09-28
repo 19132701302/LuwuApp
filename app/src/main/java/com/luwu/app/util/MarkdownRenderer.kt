@@ -163,6 +163,13 @@ object MarkdownRenderer {
 
     /** Joe 成对短代码 → 提示块 */
     private fun renderJoePair(tag: String, type: String, content: String): String {
+        // hide 付费隐藏块：{hide}...{/hide} → 商业级付费锁定卡（不泄露内容）
+        if (tag.lowercase() == "hide") {
+            return "<div class=\"paid-hidden\">" +
+                "<span class=\"paid-hidden-lock\">🔒</span>" +
+                "<div><b>付费内容已隐藏</b><i>本资源为付费资源，支付后即可解锁查看</i></div>" +
+                "</div>"
+        }
         val t = when (tag.lowercase()) {
             "alert", "message" -> type.ifBlank { "info" }
             "success", "tip" -> "success"
