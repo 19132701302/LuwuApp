@@ -481,7 +481,7 @@ class ArticleDetailActivity : AppCompatActivity() {
         sb.append(".rel-body{flex:1;min-width:0;}")
         sb.append(".rel-t{font-size:14px;color:${if (isDark) "#E6E8EB" else "#222"};line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}")
         sb.append(".rel-m{font-size:11px;color:#9AA0A8;margin-top:3px;}")
-        sb.append(".rel-stat{color:#0D9488;}")
+        sb.append(".rel-stat{color:#0F766E;}")
         sb.append("</style>")
         sb.append("<div class=\"rel-wrap\"><div class=\"rel-title\">相关推荐</div>")
         for (i in 0 until related.length()) {
@@ -515,9 +515,9 @@ class ArticleDetailActivity : AppCompatActivity() {
     private fun commentsTemplate(isDark: Boolean = false): String {
         return """
             <div id="luwu_cmt" style="margin:24px -16px 0;padding:16px 16px 8px;background:${if (isDark) "#1A1F24" else "#FFFFFF"};border-top:8px solid ${if (isDark) "#2A3138" else "#F4F6F8"}">
-              <div style="font-size:16px;font-weight:700;color:${if (isDark) "#F1F3F5" else "#111"};margin-bottom:4px">评论 <span id="luwu_cmt_count" style="color:#14B8A6;font-weight:700">0</span></div>
+              <div style="font-size:16px;font-weight:700;color:${if (isDark) "#F1F3F5" else "#111"};margin-bottom:4px">评论 <span id="luwu_cmt_count" style="color:#0F766E;font-weight:700">0</span></div>
               <div id="luwu_cmt_list"></div>
-              <div onclick="luwuApp.openComments()" style="margin:14px 0;padding:11px 0;text-align:center;color:#0D9488;font-size:14px;font-weight:600;background:${if (isDark) "#132A27" else "#F0FAF9"};border-radius:10px">查看全部评论 →</div>
+              <div onclick="luwuApp.openComments()" style="margin:14px 0;padding:11px 0;text-align:center;color:#0F766E;font-size:14px;font-weight:600;background:${if (isDark) "#123F3B" else "#F4FAF9"};border-radius:10px">查看全部评论 →</div>
             </div>
             <script>
             window.luwuFillComments = function(items, total) {
@@ -528,7 +528,7 @@ class ArticleDetailActivity : AppCompatActivity() {
                 var it = items[i] || {};
                 var a = it.author || '游客', t = it.time || '', x = it.text || '';
                 h += '<div style="display:flex;gap:10px;padding:12px 0;border-bottom:1px solid ${if (isDark) "#2A3138" else "#F1F5F5"}">'
-                   + '<div style="flex:none;width:30px;height:30px;border-radius:50%;background:#E0F2EF;color:#0D9488;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">' + a.charAt(0) + '</div>'
+                   + '<div style="flex:none;width:30px;height:30px;border-radius:50%;background:#E4F2F0;color:#0F766E;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">' + a.charAt(0) + '</div>'
                    + '<div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:600;color:${if (isDark) "#E5E7EB" else "#334155"}">' + a + '<span style="color:#94A3B8;font-weight:400;font-size:11px;margin-left:8px">' + t + '</span></div>'
                    + '<div style="font-size:13px;color:${if (isDark) "#AAB2BC" else "#475569"};margin-top:3px;line-height:1.6">' + x + '</div></div></div>';
               }

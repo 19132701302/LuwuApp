@@ -549,13 +549,13 @@ private fun catIconRes(icon: String): Int {
 
 /** 分类颜色映射：c-blue / c-purple / c-yellow 等 → 颜色值 */
 private fun catColor(color: String): Int = when (color) {
-    "blue" -> 0xFF3B82F6.toInt()
-    "purple" -> 0xFF8B5CF6.toInt()
-    "yellow" -> 0xFFF59E0B.toInt()
-    "green" -> 0xFF10B981.toInt()
-    "red" -> 0xFFEF4444.toInt()
-    "orange" -> 0xFFF97316.toInt()
-    "pink" -> 0xFFEC4899.toInt()
-    "teal", "cyan", "green-2" -> 0xFF14B8A6.toInt()
-    else -> 0xFF0D9488.toInt()
+    "blue" -> 0xFF3B5FBF.toInt()
+    "purple" -> 0xFF7A4A8C.toInt()
+    "yellow" -> 0xFFA4622A.toInt()
+    "green" -> 0xFF0F766E.toInt()
+    "red" -> 0xFFA4622A.toInt()
+    "orange" -> 0xFFA4622A.toInt()
+    "pink" -> 0xFF7A4A8C.toInt()
+    "teal", "cyan", "green-2" -> 0xFF0F766E.toInt()
+    else -> 0xFF0F766E.toInt()
 }

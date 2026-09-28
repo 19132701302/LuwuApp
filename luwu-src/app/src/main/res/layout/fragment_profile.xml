@@ -37,10 +37,10 @@
                 android:id="@+id/tv_login_avatar"
                 android:layout_width="62dp"
                 android:layout_height="62dp"
-                android:background="@drawable/bg_avatar_soft"
+                android:background="@drawable/bg_avatar"
                 android:gravity="center"
                 android:text="未"
-                android:textColor="@color/brand_blue"
+                android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </FrameLayout>

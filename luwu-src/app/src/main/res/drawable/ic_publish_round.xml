@@ -7,10 +7,10 @@
     <!-- 圆形底：品牌色渐变 -->
     <path
         android:pathData="M28,4 A24,24 0 1,1 27.99,4 Z"
-        android:fillColor="#0D9488" />
+        android:fillColor="@color/brand" />
     <path
         android:pathData="M28,4 A24,24 0 1,1 27.99,4 Z"
-        android:fillColor="#14B8A6"
+        android:fillColor="@color/brand_active"
         android:fillAlpha="0.35" />
     <!-- 白色加号 -->
     <path

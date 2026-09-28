@@ -1,42 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- 品牌色：青碧（唯一强调色，替代原蓝色模板） -->
-    <color name="brand_blue">#0D9488</color>
-    <color name="brand_red">#E0483E</color>
+    <!-- ========== v9.4 商业级设计令牌 ==========
+         设计语言：收敛 AI 亮青，回归「深青墨 + 中性灰阶」的现代中文商业 App 视觉
+         主色仅用于关键操作与选中态，界面主体由中性色构成 -->
+
+    <!-- 品牌色：深青墨（沉稳，克制，降低模板感） -->
+    <color name="brand">#0F766E</color>
+    <color name="brand_active">#14B8A6</color>
+    <color name="brand_deep">#115E59</color>
+    <color name="brand_pressed">#0C645D</color>
+    <color name="brand_soft">#E4F2F0</color>
+    <color name="brand_ink">#134E4A</color>
+
+    <!-- 兼容旧引用名（色值已收敛） -->
+    <color name="brand_blue">#0F766E</color>
+    <color name="brand_red">#D92D20</color>
     <color name="brand_dark">#115E59</color>
-    <color name="brand_pressed">#0B7A70</color>
-    <color name="brand_soft">#E6F5F3</color>
 
-    <!-- 底色与卡片 -->
-    <color name="bg_page">#F4F5F7</color>
+    <!-- 底色与表面 -->
+    <color name="bg_page">#F7F7F8</color>
+    <color name="page_bg">#F7F7F8</color>
+    <color name="bg_app">#F7F7F8</color>
     <color name="surface">#FFFFFF</color>
-    <color name="line">#ECEDF0</color>
+    <color name="surface_alt">#F2F3F5</color>
+    <color name="line">#EDEEF0</color>
+    <color name="line_strong">#E2E4E7</color>
+    <color name="line_soft">#F0F1F3</color>
 
-    <!-- 文字层级 -->
-    <color name="ink">#17181C</color>
-    <color name="ink_2">#565A61</color>
-    <color name="ink_3">#9AA0A8</color>
+    <!-- 文字层级（近黑 → 三级灰） -->
+    <color name="ink">#111214</color>
+    <color name="ink_2">#5C6166</color>
+    <color name="ink_3">#9CA1A8</color>
+    <color name="ink_4">#C2C6CC</color>
 
-    <!-- 功能色 -->
+    <!-- 语义色 -->
+    <color name="danger">#D92D20</color>
+    <color name="success">#12B76A</color>
+    <color name="warning">#F79009</color>
+    <color name="info">#175CD3</color>
+
+    <!-- 功能色兼容 -->
     <color name="white">#FFFFFF</color>
-    <color name="danger">#DC2626</color>
-    <color name="ad_bg">#F0FAF8</color>
-    <color name="page_bg">#F4F5F7</color>
+    <color name="ad_bg">#F4FAF9</color>
 
     <!-- 底部导航 -->
-    <color name="nav_selected">#0D9488</color>
-    <color name="nav_unselected">#9AA0A8</color>
+    <color name="nav_selected">#0F766E</color>
+    <color name="nav_unselected">#9CA1A8</color>
 
-    <!-- v4.0 设计系统补充 -->
-    <color name="bg_app">#F5F6F8</color>
-    <color name="card_shadow">#0A0D9488</color>
-    <color name="tab_indicator">#0D9488</color>
-    <color name="chip_bg">#F0F1F4</color>
-    <color name="badge_soft_bg">#E6F5F3</color>
-    <color name="badge_soft_text">#0D7A70</color>
+    <!-- 卡片/徽标/标签 -->
+    <color name="card_shadow">#120F766E</color>
+    <color name="tab_indicator">#0F766E</color>
+    <color name="chip_bg">#F2F3F5</color>
+    <color name="badge_soft_bg">#E4F2F0</color>
+    <color name="badge_soft_text">#0F766E</color>
+    <color name="bg_neutral_soft">#F2F3F5</color>
+    <color name="dot_off">#D9DCE1</color>
 
-    <!-- v7.3 深色模式适配：中性浅底 / 分隔线 / 圆点（values-night 同名覆盖） -->
-    <color name="bg_neutral_soft">#F2F4F7</color>
-    <color name="line_soft">#EEF0F3</color>
-    <color name="dot_off">#D5D8DD</color>
+    <!-- 分类图标柔和色系（替代 8 色高饱和：仅 4 个低饱和家族，识别度靠深浅而非花哨） -->
+    <color name="cat_a_bg">#E4F2F0</color>
+    <color name="cat_a_fg">#0F766E</color>
+    <color name="cat_b_bg">#E9F0FA</color>
+    <color name="cat_b_fg">#3B5FBF</color>
+    <color name="cat_c_bg">#F4EEE4</color>
+    <color name="cat_c_fg">#A4622A</color>
+    <color name="cat_d_bg">#F2EAF3</color>
+    <color name="cat_d_fg">#7A4A8C</color>
 </resources>

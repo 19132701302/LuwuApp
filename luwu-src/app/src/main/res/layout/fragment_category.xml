@@ -190,7 +190,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:layout_marginTop="12dp"
-                        android:background="@drawable/bg_stats_gradient"
+                        android:background="@drawable/bg_card"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingVertical="18dp">
@@ -207,7 +207,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="--"
-                                android:textColor="@color/white"
+                                android:textColor="@color/ink"
                                 android:textSize="22sp"
                                 android:textStyle="bold" />
 
@@ -216,14 +216,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="今日发帖"
-                                android:textColor="#CCFFFFFF"
+                                android:textColor="@color/ink_3"
                                 android:textSize="11.5sp" />
                         </LinearLayout>
 
                         <View
                             android:layout_width="0.5dp"
                             android:layout_height="32dp"
-                            android:background="#33FFFFFF" />
+                            android:background="@color/line_strong" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -237,7 +237,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="--"
-                                android:textColor="@color/white"
+                                android:textColor="@color/ink"
                                 android:textSize="22sp"
                                 android:textStyle="bold" />
 
@@ -246,14 +246,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="帖子总数"
-                                android:textColor="#CCFFFFFF"
+                                android:textColor="@color/ink_3"
                                 android:textSize="11.5sp" />
                         </LinearLayout>
 
                         <View
                             android:layout_width="0.5dp"
                             android:layout_height="32dp"
-                            android:background="#33FFFFFF" />
+                            android:background="@color/line_strong" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -267,7 +267,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="--"
-                                android:textColor="@color/white"
+                                android:textColor="@color/ink"
                                 android:textSize="22sp"
                                 android:textStyle="bold" />
 
@@ -276,7 +276,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="会员数量"
-                                android:textColor="#CCFFFFFF"
+                                android:textColor="@color/ink_3"
                                 android:textSize="11.5sp" />
                         </LinearLayout>
                     </LinearLayout>

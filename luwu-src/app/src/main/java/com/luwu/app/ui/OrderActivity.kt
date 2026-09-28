@@ -83,6 +83,25 @@ class OrderActivity : AppCompatActivity() {
         else -> "在线支付"
     }
 
+    /** 支付方式徽标：品牌色圆标 + 首字母 */
+    private fun bindPayBadge(icon: TextView, type: String) {
+        icon.visibility = View.VISIBLE
+        icon.text = when (type) {
+            "wxpay", "wechat" -> "微"
+            "alipay" -> "支"
+            "qqpay" -> "Q"
+            else -> "付"
+        }
+        icon.setBackgroundResource(
+            when (type) {
+                "wxpay", "wechat" -> R.drawable.bg_pay_wechat
+                "alipay" -> R.drawable.bg_pay_alipay
+                "qqpay" -> R.drawable.bg_pay_qq
+                else -> R.drawable.bg_pay_other
+            }
+        )
+    }
+
     inner class OrderAdapter(
         private val onItem: (JSONObject) -> Unit
     ) : RecyclerView.Adapter<OrderAdapter.Holder>() {
@@ -106,11 +125,12 @@ class OrderActivity : AppCompatActivity() {
             holder.tvTitle.text = o.optString("title", "付费资源")
             holder.tvOrderNo.text = "订单号：${o.optString("trade_no", "-")}"
             holder.tvPay.text = payName(o.optString("type", ""))
+            bindPayBadge(holder.tvPayIcon, o.optString("type", ""))
             holder.tvMoney.text = "¥${o.optString("money", "0.00")}"
             holder.tvTime.text = o.optString("time", "")
             holder.tvStatus.text = if (paid) "已支付" else "待支付"
             holder.tvStatus.setTextColor(
-                if (paid) 0xFF0D9488.toInt() else 0xFFF59E0B.toInt()
+                if (paid) 0xFF0F766E.toInt() else 0xFFF59E0B.toInt()
             )
             holder.itemView.setOnClickListener { onItem(o) }
         }
@@ -121,6 +141,7 @@ class OrderActivity : AppCompatActivity() {
             val tvTitle: TextView = v.findViewById(R.id.tv_order_title)
             val tvOrderNo: TextView = v.findViewById(R.id.tv_order_no)
             val tvPay: TextView = v.findViewById(R.id.tv_order_pay)
+            val tvPayIcon: TextView = v.findViewById(R.id.tv_pay_icon)
             val tvMoney: TextView = v.findViewById(R.id.tv_order_money)
             val tvTime: TextView = v.findViewById(R.id.tv_order_time)
             val tvStatus: TextView = v.findViewById(R.id.tv_order_status)
