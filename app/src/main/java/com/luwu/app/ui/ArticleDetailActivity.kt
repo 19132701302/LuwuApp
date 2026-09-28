@@ -342,7 +342,7 @@ class ArticleDetailActivity : AppCompatActivity() {
                     val content = json.optString("content", "")
                     if (content.isNotBlank()) {
                         Prefs.setPaidUnlocked(this, cid, content)
-                        val html = MarkdownRenderer.render(content)
+                        val html = MarkdownRenderer.render(content, cid)
                             .replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n")
                         webView?.evaluateJavascript(
                             "window.luwuPaidOk('$cid',\"$html\")", null
@@ -370,7 +370,7 @@ class ArticleDetailActivity : AppCompatActivity() {
                     val content = json.optString("content", "")
                     if (content.isNotBlank()) {
                         Prefs.setPaidUnlocked(this, cid, content)
-                        val html = MarkdownRenderer.render(content)
+                        val html = MarkdownRenderer.render(content, cid)
                             .replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n")
                         webView?.evaluateJavascript(
                             "window.luwuPaidOk('$cid',\"$html\")", null

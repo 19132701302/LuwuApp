@@ -10,7 +10,7 @@ object MarkdownRenderer {
     // 全文价格提取（供 hide 付费锁定卡展示）
     private var pendingPrice: String = "9.9"
 
-    fun render(raw: String): String {
+    fun render(raw: String, cid: Int = 0): String {
         if (raw.isBlank()) return ""
         // 扫描全文售价（{hide} 付费锁定卡展示价格用）
         pendingPrice = Regex("""售价\s*(\d+(?:\.\d+)?)""").find(raw)?.groupValues?.get(1) ?: "9.9"
@@ -45,7 +45,7 @@ object MarkdownRenderer {
         text = text.replace(
             Regex("""\{([a-zA-Z]+)(?:\s+type="([^"]*)")?\}(.*?)\{/\1\}""", RegexOption.DOT_MATCHES_ALL)
         ) { m ->
-            joes.add(renderJoePair(m.groupValues[1], m.groupValues[2], m.groupValues[3]))
+            joes.add(renderJoePair(m.groupValues[1], m.groupValues[2], m.groupValues[3], cid))
             "\u0001JOE${joes.size - 1}\u0001"
         }
         // 3.5 保护 HTML 形式短代码 <joe-cloud title="..." type="..." url="..."></joe-cloud>
@@ -167,23 +167,29 @@ object MarkdownRenderer {
     }
 
     /** Joe 成对短代码 → 提示块 */
-    private fun renderJoePair(tag: String, type: String, content: String): String {
-        // hide 付费隐藏块：{hide}...{/hide} → 商业级付费锁定卡（不泄露内容，展示价格与支付方式）
+    private fun renderJoePair(tag: String, type: String, content: String, cid: Int = 0): String {
+        // hide 付费隐藏块：{hide}...{/hide} → 商业级付费锁定卡（完整支付：价格 + 支付方式 + 立即支付按钮）
         if (tag.lowercase() == "hide") {
             val price = pendingPrice
-            return "<div class=\"paid-card\" data-price=\"$price\">" +
+            val cidAttr = if (cid > 0) " data-cid=\"$cid\"" else ""
+            val payBtn = if (cid > 0)
+                "<button class=\"paid-btn\" type=\"button\">立即支付 <b>¥$price</b></button>" +
+                "<div class=\"paid-tip\">支付成功后自动解锁查看 · 订单可在「我的订单」查询</div>"
+            else
+                "<div class=\"paid-tip\">该资源为网站旧版付费内容 · 如需App内一键支付，请使用 {paid} 短代码发布</div>"
+            return "<div class=\"paid-card\"$cidAttr data-price=\"$price\">" +
                 "<div class=\"paid-top\">" +
                 "  <span class=\"paid-lock\">🔒</span>" +
                 "  <div><b>付费内容已隐藏</b><i>本资源为付费资源，支付后即可解锁查看</i></div>" +
                 "</div>" +
                 "<div class=\"paid-price\"><span class=\"paid-rmb\">¥</span><b>$price</b></div>" +
                 "<div class=\"paid-methods\">" +
-                "  <span class=\"pm pm-wx\"><span class=\"pm-ico\"></span>微信支付</span>" +
-                "  <span class=\"pm pm-ali\"><span class=\"pm-ico\"></span>支付宝</span>" +
-                "  <span class=\"pm pm-qq\"><span class=\"pm-ico\"></span>QQ支付</span>" +
+                "  <button class=\"pm pm-wx\" type=\"button\" data-m=\"wxpay\"><span class=\"pm-ico\"></span>微信支付</button>" +
+                "  <button class=\"pm pm-ali\" type=\"button\" data-m=\"alipay\"><span class=\"pm-ico\"></span>支付宝</button>" +
+                "  <button class=\"pm pm-qq\" type=\"button\" data-m=\"qqpay\"><span class=\"pm-ico\"></span>QQ支付</button>" +
                 "</div>" +
-                "<div class=\"paid-tip\">该资源为网站旧版付费内容 · 如需App内一键支付，请使用 {paid} 短代码发布</div>" +
-                "</div>"
+                payBtn +
+                "<div class=\"paid-result\"></div></div>"
         }
         val t = when (tag.lowercase()) {
             "alert", "message" -> type.ifBlank { "info" }

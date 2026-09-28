@@ -284,6 +284,7 @@ Marking id:sw_push:2131231250 reachable: referenced from /home/user/Doubao/chats
 Marking id:btn_check_update:2131230823 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:btn_clear_cache:2131230824 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tv_settings_version:2131231360 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking mipmap:ic_launcher:2131623936 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking integer:material_motion_duration_long_1:2131296294 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking attr:motionEasingStandard:2130903818 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:month_title:2131231080 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -416,7 +417,6 @@ Marking attr:elevationOverlayEnabled:2130903429 reachable: referenced from /home
 Marking attr:elevationOverlayColor:2130903428 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking attr:elevationOverlayAccentColor:2130903427 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:theme_saved:2131755236 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking mipmap:ic_launcher:2131623936 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:fullscreen_header:2131230967 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking dimen:mtrl_calendar_dialog_background_inset:2131100279 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking style:Widget_MaterialComponents_MaterialCalendar:2131821593 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -1271,8 +1271,8 @@ from_uid
 tv_input
 mAttachInfo
 classes.dex
-account
 JOE
+account
 TLS_FALLBACK_SCSV
 mResourcesImpl
 TLS_DH_anon_WITH_AES_256_CBC_SHA
@@ -1525,8 +1525,8 @@ mOnKeyListener
 ACTION_PASTE
 android.graphics.FontFamily
 00
-HORIZONTAL_DIMENSION
 danger
+HORIZONTAL_DIMENSION
 CENTER
 observer
 java.lang.Long

@@ -19526,6 +19526,8 @@ com.luwu.app.util.ImageLoader:
     private static final long DISK_MAX_BYTES
     private static final int DISK_MAX_FILES
     public final void clear()
+com.luwu.app.util.MarkdownRenderer:
+    static synthetic java.lang.String renderJoePair$default(com.luwu.app.util.MarkdownRenderer,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.Object)
 com.luwu.app.util.Prefs:
     private static final java.lang.String DEFAULT_THEME
     private static final java.lang.String KEY_ACCOUNT
@@ -36138,7 +36140,8 @@ com.luwu.app.util.MarkdownRenderer$inline$4
 com.luwu.app.util.MarkdownRenderer$inline$5
 com.luwu.app.util.MarkdownRenderer$inline$6
 com.luwu.app.util.MarkdownRenderer$render$2
-com.luwu.app.util.MarkdownRenderer$render$3
+com.luwu.app.util.MarkdownRenderer$render$3:
+    public final java.lang.CharSequence invoke(kotlin.text.MatcherMatchResult)
 com.luwu.app.util.MarkdownRenderer$render$4
 com.luwu.app.util.MarkdownRenderer$render$5
 com.luwu.app.util.MarkdownRenderer$render$7
