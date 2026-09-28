@@ -3,8 +3,8 @@
 # min_api: 21
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: c5c8310
-# pg_map_hash: SHA-256 c5c83103c0e2f5358104a76642904cea9859f00e76da70083350250fc7364eff
+# pg_map_id: 5e0cb18
+# pg_map_hash: SHA-256 5e0cb1837c481ad140e7b8fd50b591c51438cf323c1c8c63d8b6d0c8267aa147
 android.support.v4.app.RemoteActionCompatParcelizer -> android.support.v4.app.RemoteActionCompatParcelizer:
 # {"id":"sourceFile","fileName":"RemoteActionCompatParcelizer.java"}
     1:1:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel):0:0 -> read
@@ -53204,14 +53204,14 @@ com.luwu.app.adapter.PostAdapter -> h2.n:
     204:207:com.luwu.app.api.AdItem com.luwu.app.adapter.FeedRow$Ad.getItem():0:0 -> e
     204:207:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0 -> e
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    208:340:void com.luwu.app.adapter.PostAdapter$AdHolder.bind(com.luwu.app.api.AdItem):0:0 -> e
-    208:340:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0 -> e
-    341:346:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0:0 -> e
-    347:354:void com.luwu.app.adapter.PostAdapter$FooterHolder.bind(boolean):0:0 -> e
-    347:354:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0 -> e
-    355:360:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0:0 -> e
-    361:366:void com.luwu.app.adapter.PostAdapter$FooterHolder.bind(boolean):0:0 -> e
-    361:366:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0 -> e
+    208:331:void com.luwu.app.adapter.PostAdapter$AdHolder.bind(com.luwu.app.api.AdItem):0:0 -> e
+    208:331:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0 -> e
+    332:337:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0:0 -> e
+    338:345:void com.luwu.app.adapter.PostAdapter$FooterHolder.bind(boolean):0:0 -> e
+    338:345:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0 -> e
+    346:351:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0:0 -> e
+    352:357:void com.luwu.app.adapter.PostAdapter$FooterHolder.bind(boolean):0:0 -> e
+    352:357:void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int):0 -> e
     58:135:void com.luwu.app.adapter.PostAdapter$HeroHolder.<init>(com.luwu.app.adapter.PostAdapter,android.view.View):0:0 -> f
     58:135:androidx.recyclerview.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):0 -> f
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroidx/recyclerview/widget/RecyclerView;I)Lx0/f1;"}

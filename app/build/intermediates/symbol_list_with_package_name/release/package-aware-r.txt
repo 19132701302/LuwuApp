@@ -2972,6 +2972,7 @@ drawable bg_pay_alipay
 drawable bg_pay_other
 drawable bg_pay_qq
 drawable bg_pay_wechat
+drawable bg_play_round
 drawable bg_quick_blue
 drawable bg_quick_cyan
 drawable bg_quick_green

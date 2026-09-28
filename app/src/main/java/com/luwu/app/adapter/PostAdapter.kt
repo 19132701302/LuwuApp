@@ -165,18 +165,21 @@ class PostAdapter(
             tvText.text = ad.text
             when (ad.type) {
                 "image" -> {
-                    tvText.visibility = if (ad.text.isBlank()) View.GONE else View.VISIBLE
+                    // 纯图卡：只显示全宽图片，右上角广告角标
+                    tvText.visibility = View.GONE
                     ivCover.visibility = if (ad.img.isNotBlank()) View.VISIBLE else View.GONE
                     llVideo.visibility = View.GONE
                     if (ad.img.isNotBlank()) com.luwu.app.util.ImageLoader.load(ad.img, ivCover)
                 }
                 "video" -> {
-                    tvText.visibility = if (ad.text.isBlank()) View.GONE else View.VISIBLE
+                    // 视频广告：封面图 + 中央播放角标
+                    tvText.visibility = View.GONE
                     ivCover.visibility = if (ad.img.isNotBlank()) View.VISIBLE else View.GONE
-                    llVideo.visibility = View.VISIBLE
+                    llVideo.visibility = if (ad.img.isNotBlank()) View.VISIBLE else View.GONE
                     if (ad.img.isNotBlank()) com.luwu.app.util.ImageLoader.load(ad.img, ivCover)
                 }
                 else -> {
+                    // 无图纯文字广告：文字兜底显示
                     tvText.visibility = View.VISIBLE
                     ivCover.visibility = View.GONE
                     llVideo.visibility = View.GONE

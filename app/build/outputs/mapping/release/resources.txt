@@ -247,7 +247,7 @@ Marking id:btn_search:2131230852 reachable: referenced from /home/user/Doubao/ch
 Marking id:btn_avatar:2131230817 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tv_avatar_initial:2131231306 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:iv_avatar_initial:2131230999 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:logo_site:2131165448 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:logo_site:2131165449 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:btn_retry:2131230845 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:btn_open_browser:2131230838 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:home_scroll:2131230979 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -258,8 +258,8 @@ Marking id:sort_latest:2131231210 reachable: referenced from /home/user/Doubao/c
 Marking id:sort_hot:2131231209 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:sort_comments:2131231208 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:sort_likes:2131231211 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:bg_sort_on:2131165367 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:bg_sort_off:2131165366 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:bg_sort_on:2131165368 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:bg_sort_off:2131165367 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking color:ink_2:2131034237 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking drawable:bg_dot_on:2131165337 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking drawable:bg_dot_off:2131165336 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -293,7 +293,7 @@ Marking id:material_hour_tv:2131231037 reachable: referenced from /home/user/Dou
 Marking id:material_clock_hand:2131231031 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:selection_type:2131231194 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:exposed_dropdown_menu_content_description:2131755073 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:mtrl_dropdown_arrow:2131165482 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:mtrl_dropdown_arrow:2131165483 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:swipe_fav:2131231243 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:recycler_fav:2131231160 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:fav_empty:2131230947 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -309,7 +309,7 @@ Marking id:btn_clear_keyword:2131230825 reachable: referenced from /home/user/Do
 Marking id:tab_title:2131231248 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tab_content:2131231247 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking drawable:bg_chip_light:2131165332 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:bg_segment_item_off:2131165365 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:bg_segment_item_off:2131165366 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tag_unhandled_key_listeners:2131231260 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking layout:activity_detail:2131427359 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:btn_favorite:2131230830 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -318,12 +318,12 @@ Marking id:btn_like:2131230834 reachable: referenced from /home/user/Doubao/chat
 Marking id:btn_more:2131230837 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:btn_comment_input:2131230827 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:btn_share:2131230854 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_share:2131165442 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_share:2131165443 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:loading_progress:2131231023 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_star_filled:2131165444 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_star:2131165443 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_like_filled:2131165422 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_like:2131165421 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_star_filled:2131165445 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_star:2131165444 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_like_filled:2131165423 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_like:2131165422 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:article_ad_wrap:2131230795 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:iv_article_ad:2131230997 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:btn_ad_close:2131230814 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -389,8 +389,8 @@ Marking id:mtrl_calendar_main_pane:2131231077 reachable: referenced from /home/u
 Marking id:mtrl_picker_header_selection_text:2131231088 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:mtrl_picker_header_toggle:2131231090 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:mtrl_picker_title_text:2131231094 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:material_ic_calendar_black_24dp:2131165461 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:material_ic_edit_black_24dp:2131165463 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:material_ic_calendar_black_24dp:2131165462 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:material_ic_edit_black_24dp:2131165464 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:mtrl_picker_toggle_to_calendar_input_mode:2131755179 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:mtrl_picker_toggle_to_text_input_mode:2131755181 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:report_drawn:2131231164 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -400,7 +400,7 @@ Marking layout:design_navigation_menu_item:2131427387 reachable: referenced from
 Marking dimen:design_navigation_icon_size:2131099767 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:design_menu_item_text:2131230903 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:design_menu_item_action_area_stub:2131230902 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:navigation_empty_icon:2131165507 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:navigation_empty_icon:2131165508 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:split_action_bar:2131231218 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking attr:textAppearanceLineHeightEnabled:2130904065 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking color:chip_bg:2131034183 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -511,7 +511,7 @@ Marking dimen:mtrl_navigation_bar_item_default_icon_size:2131100349 reachable: r
 Marking attr:toolbarNavigationButtonStyle:2130904135 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:abc_action_bar_up_description:2131755009 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:clear_text_end_icon_content_description:2131755065 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:mtrl_ic_cancel:2131165485 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:mtrl_ic_cancel:2131165486 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking drawable:bg_pay_qq:2131165347 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking drawable:bg_pay_wechat:2131165348 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking drawable:bg_pay_other:2131165346 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -535,7 +535,7 @@ Marking id:swipe_category:2131231242 reachable: referenced from /home/user/Douba
 Marking id:recycler_category:2131231159 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:iv_logo:2131231007 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking layout:fragment_category:2131427392 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:design_password_eye:2131165388 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:design_password_eye:2131165389 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:password_toggle_content_description:2131755205 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking dimen:design_bottom_navigation_item_max_width:2131099749 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking dimen:design_bottom_navigation_item_min_width:2131099750 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -608,7 +608,7 @@ Marking id:navigation_bar_item_labels_group:2131231105 reachable: referenced fro
 Marking id:navigation_bar_item_small_label_view:2131231107 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:navigation_bar_item_large_label_view:2131231106 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking dimen:m3_navigation_item_active_indicator_label_padding:2131100089 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:mtrl_navigation_bar_item_background:2131165491 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:mtrl_navigation_bar_item_background:2131165492 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking dimen:mtrl_navigation_bar_item_default_margin:2131100350 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking string:item_view_role_description:2131755085 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking layout:mtrl_calendar_day:2131427437 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -682,10 +682,10 @@ Marking animator:fragment_fade_enter:2130837509 reachable: referenced from /home
 Marking animator:fragment_fade_exit:2130837510 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking animator:fragment_open_enter:2130837511 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking animator:fragment_open_exit:2130837512 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_cat_vip:2131165403 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_cat_poster:2131165401 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_cat_wallet:2131165404 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:ic_cat_trend:2131165402 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_cat_vip:2131165404 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_cat_poster:2131165402 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_cat_wallet:2131165405 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:ic_cat_trend:2131165403 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking layout:dialog_update_progress:2131427391 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:progress:2131231152 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:tv_percent:2131231346 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -750,10 +750,10 @@ Marking color:brand_red:2131034158 reachable: referenced from /home/user/Doubao/
 Marking attr:state_indeterminate:2130903979 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking attr:state_error:2130903978 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking style:Widget_MaterialComponents_CompoundButton_CheckBox:2131821584 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:mtrl_checkbox_button_checked_unchecked:2131165472 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:mtrl_checkbox_button_checked_unchecked:2131165473 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking attr:isMaterial3Theme:2130903583 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:mtrl_checkbox_button:2131165471 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-Marking drawable:mtrl_checkbox_button_icon:2131165473 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:mtrl_checkbox_button:2131165472 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking drawable:mtrl_checkbox_button_icon:2131165474 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:checked:2131230871 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:unchecked:2131231365 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 Marking id:indeterminate:2131230989 reachable: referenced from /home/user/Doubao/chats/38442467729611266/luwu_v86_build/luwu-src/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
@@ -3122,7 +3122,7 @@ Marking attr:statusBarScrim:2130903985 used because it matches string pool const
 Marking integer:status_bar_notification_info_maxnum:2131296323 used because it matches string pool constant status
 Marking string:status_bar_notification_info_overflow:2131755231 used because it matches string pool constant status
 Marking id:skipCollapsed:2131231201 used because it matches string pool constant skip
-Marking drawable:notify_panel_notification_icon_bg:2131165520 used because it matches string pool constant notify
+Marking drawable:notify_panel_notification_icon_bg:2131165521 used because it matches string pool constant notify
 Marking string:notify_center:2131755201 used because it matches string pool constant notify
 Marking xml:file_paths:2131951616 used because it matches string pool constant file
 Marking attr:menu:2130903779 used because it matches string pool constant menu
@@ -3664,18 +3664,18 @@ Marking dimen:notification_small_icon_size_as_large:2131100432 used because it m
 Marking dimen:notification_subtext_size:2131100433 used because it matches string pool constant notification
 Marking dimen:notification_top_pad:2131100434 used because it matches string pool constant notification
 Marking dimen:notification_top_pad_large_text:2131100435 used because it matches string pool constant notification
-Marking drawable:notification_action_background:2131165508 used because it matches string pool constant notification
-Marking drawable:notification_bg:2131165509 used because it matches string pool constant notification
-Marking drawable:notification_bg_low:2131165510 used because it matches string pool constant notification
-Marking drawable:notification_bg_low_normal:2131165511 used because it matches string pool constant notification
-Marking drawable:notification_bg_low_pressed:2131165512 used because it matches string pool constant notification
-Marking drawable:notification_bg_normal:2131165513 used because it matches string pool constant notification
-Marking drawable:notification_bg_normal_pressed:2131165514 used because it matches string pool constant notification
-Marking drawable:notification_icon_background:2131165515 used because it matches string pool constant notification
-Marking drawable:notification_oversize_large_icon_bg:2131165516 used because it matches string pool constant notification
-Marking drawable:notification_template_icon_bg:2131165517 used because it matches string pool constant notification
-Marking drawable:notification_template_icon_low_bg:2131165518 used because it matches string pool constant notification
-Marking drawable:notification_tile_bg:2131165519 used because it matches string pool constant notification
+Marking drawable:notification_action_background:2131165509 used because it matches string pool constant notification
+Marking drawable:notification_bg:2131165510 used because it matches string pool constant notification
+Marking drawable:notification_bg_low:2131165511 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_normal:2131165512 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_pressed:2131165513 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal:2131165514 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal_pressed:2131165515 used because it matches string pool constant notification
+Marking drawable:notification_icon_background:2131165516 used because it matches string pool constant notification
+Marking drawable:notification_oversize_large_icon_bg:2131165517 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_bg:2131165518 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_low_bg:2131165519 used because it matches string pool constant notification
+Marking drawable:notification_tile_bg:2131165520 used because it matches string pool constant notification
 Marking id:notification_background:2131231113 used because it matches string pool constant notification
 Marking id:notification_main_column:2131231114 used because it matches string pool constant notification
 Marking id:notification_main_column_container:2131231115 used because it matches string pool constant notification
@@ -3984,7 +3984,7 @@ Marking attr:textInputOutlinedStyle:2130904088 used because it matches string po
 Marking attr:textInputStyle:2130904089 used because it matches string pool constant te
 Marking attr:textLocale:2130904090 used because it matches string pool constant te
 Marking attr:textStartPadding:2130904091 used because it matches string pool constant te
-Marking drawable:test_level_drawable:2131165521 used because it matches string pool constant te
+Marking drawable:test_level_drawable:2131165522 used because it matches string pool constant te
 Marking id:text:2131231262 used because it matches string pool constant te
 Marking id:text2:2131231263 used because it matches string pool constant te
 Marking id:textEnd:2131231264 used because it matches string pool constant te
@@ -8493,6 +8493,7 @@ Marking string:category:2131755060 used because it matches string pool constant 
     @color/ink_3
 @drawable/bg_pay_qq : reachable=true
 @drawable/bg_pay_wechat : reachable=true
+@drawable/bg_play_round : reachable=false
 @drawable/bg_quick_blue : reachable=false
     @color/cat_d_bg
 @drawable/bg_quick_cyan : reachable=false
@@ -10125,7 +10126,6 @@ Marking string:category:2131755060 used because it matches string pool constant 
     @color/ink_3
 @layout/fragment_category : reachable=true
     @color/bg_app
-    @color/surface
     @drawable/bg_logo_round
     @attr/selectableItemBackgroundBorderless
     @color/white
@@ -10153,7 +10153,6 @@ Marking string:category:2131755060 used because it matches string pool constant 
     @drawable/ic_star
 @layout/fragment_home : reachable=true
     @color/bg_app
-    @color/surface
     @drawable/bg_logo_round
     @attr/selectableItemBackgroundBorderless
     @string/avatar
@@ -10167,7 +10166,7 @@ Marking string:category:2131755060 used because it matches string pool constant 
     @string/notify_center
     @drawable/ic_notify
     @drawable/bg_badge_red
-    @color/line
+    @color/line_soft
     @string/ad_label
     @drawable/bg_ad_round
     @drawable/bg_banner
@@ -10187,7 +10186,7 @@ Marking string:category:2131755060 used because it matches string pool constant 
     @drawable/ic_back_top
 @layout/fragment_profile : reachable=true
     @color/bg_page
-    @color/surface
+    @color/bg_app
     @string/avatar
     @drawable/bg_avatar_soft
     @drawable/bg_avatar
@@ -10234,15 +10233,13 @@ Marking string:category:2131755060 used because it matches string pool constant 
 @layout/ime_base_split_test_activity : reachable=false
 @layout/ime_secondary_split_test_activity : reachable=false
 @layout/item_ad : reachable=true
-    @drawable/bg_ad
-    @drawable/bg_badge_ad
-    @color/white
+    @drawable/bg_ad_round
     @string/ad_label
     @color/brand_dark
     @drawable/ic_play
-    @color/ink_3
-    @string/ad_video_label
-    @drawable/ic_chevron_right
+    @drawable/bg_play_round
+    @drawable/bg_badge_ad
+    @color/white
 @layout/item_banner : reachable=true
     @drawable/bg_input_gray
     @drawable/bg_banner_shade
@@ -20468,43 +20465,43 @@ The root reachable resources are:
  drawable:bg_pay_other:2131165346
  drawable:bg_pay_qq:2131165347
  drawable:bg_pay_wechat:2131165348
- drawable:bg_segment_item_off:2131165365
- drawable:bg_sort_off:2131165366
- drawable:bg_sort_on:2131165367
- drawable:design_password_eye:2131165388
- drawable:ic_cat_poster:2131165401
- drawable:ic_cat_trend:2131165402
- drawable:ic_cat_vip:2131165403
- drawable:ic_cat_wallet:2131165404
- drawable:ic_like:2131165421
- drawable:ic_like_filled:2131165422
- drawable:ic_share:2131165442
- drawable:ic_star:2131165443
- drawable:ic_star_filled:2131165444
- drawable:logo_site:2131165448
- drawable:material_ic_calendar_black_24dp:2131165461
- drawable:material_ic_edit_black_24dp:2131165463
- drawable:mtrl_checkbox_button:2131165471
- drawable:mtrl_checkbox_button_checked_unchecked:2131165472
- drawable:mtrl_checkbox_button_icon:2131165473
- drawable:mtrl_dropdown_arrow:2131165482
- drawable:mtrl_ic_cancel:2131165485
- drawable:mtrl_navigation_bar_item_background:2131165491
- drawable:navigation_empty_icon:2131165507
- drawable:notification_action_background:2131165508
- drawable:notification_bg:2131165509
- drawable:notification_bg_low:2131165510
- drawable:notification_bg_low_normal:2131165511
- drawable:notification_bg_low_pressed:2131165512
- drawable:notification_bg_normal:2131165513
- drawable:notification_bg_normal_pressed:2131165514
- drawable:notification_icon_background:2131165515
- drawable:notification_oversize_large_icon_bg:2131165516
- drawable:notification_template_icon_bg:2131165517
- drawable:notification_template_icon_low_bg:2131165518
- drawable:notification_tile_bg:2131165519
- drawable:notify_panel_notification_icon_bg:2131165520
- drawable:test_level_drawable:2131165521
+ drawable:bg_segment_item_off:2131165366
+ drawable:bg_sort_off:2131165367
+ drawable:bg_sort_on:2131165368
+ drawable:design_password_eye:2131165389
+ drawable:ic_cat_poster:2131165402
+ drawable:ic_cat_trend:2131165403
+ drawable:ic_cat_vip:2131165404
+ drawable:ic_cat_wallet:2131165405
+ drawable:ic_like:2131165422
+ drawable:ic_like_filled:2131165423
+ drawable:ic_share:2131165443
+ drawable:ic_star:2131165444
+ drawable:ic_star_filled:2131165445
+ drawable:logo_site:2131165449
+ drawable:material_ic_calendar_black_24dp:2131165462
+ drawable:material_ic_edit_black_24dp:2131165464
+ drawable:mtrl_checkbox_button:2131165472
+ drawable:mtrl_checkbox_button_checked_unchecked:2131165473
+ drawable:mtrl_checkbox_button_icon:2131165474
+ drawable:mtrl_dropdown_arrow:2131165483
+ drawable:mtrl_ic_cancel:2131165486
+ drawable:mtrl_navigation_bar_item_background:2131165492
+ drawable:navigation_empty_icon:2131165508
+ drawable:notification_action_background:2131165509
+ drawable:notification_bg:2131165510
+ drawable:notification_bg_low:2131165511
+ drawable:notification_bg_low_normal:2131165512
+ drawable:notification_bg_low_pressed:2131165513
+ drawable:notification_bg_normal:2131165514
+ drawable:notification_bg_normal_pressed:2131165515
+ drawable:notification_icon_background:2131165516
+ drawable:notification_oversize_large_icon_bg:2131165517
+ drawable:notification_template_icon_bg:2131165518
+ drawable:notification_template_icon_low_bg:2131165519
+ drawable:notification_tile_bg:2131165520
+ drawable:notify_panel_notification_icon_bg:2131165521
+ drawable:test_level_drawable:2131165522
  id:BOTTOM_END:2131230721
  id:BOTTOM_START:2131230722
  id:SHOW_ALL:2131230728
@@ -21782,6 +21779,7 @@ Unused resources are:
  dimen:mtrl_tooltip_arrowSize:2131100415
  dimen:mtrl_tooltip_cornerSize:2131100416
  dimen:mtrl_transition_shared_axis_slide_distance:2131100420
+ drawable:bg_ad:2131165305
  drawable:bg_banner_shape:2131165319
  drawable:bg_btn_round:2131165320
  drawable:bg_button_primary_small:2131165322
@@ -21792,35 +21790,35 @@ Unused resources are:
  drawable:bg_icon_round:2131165339
  drawable:bg_icon_soft:2131165340
  drawable:bg_input:2131165341
- drawable:bg_quick_blue:2131165349
- drawable:bg_quick_cyan:2131165350
- drawable:bg_quick_green:2131165351
- drawable:bg_quick_orange:2131165352
- drawable:bg_quick_pink:2131165353
- drawable:bg_quick_purple:2131165354
- drawable:bg_quick_red:2131165355
- drawable:bg_quick_slate:2131165356
- drawable:bg_quick_teal:2131165357
- drawable:bg_quick_yellow:2131165358
- drawable:bg_search_bar:2131165361
- drawable:bg_search_glass:2131165362
- drawable:bg_stats_gradient:2131165372
- drawable:ic_call_answer:2131165395
- drawable:ic_call_answer_low:2131165396
- drawable:ic_call_answer_video:2131165397
- drawable:ic_call_answer_video_low:2131165398
- drawable:ic_call_decline:2131165399
- drawable:ic_call_decline_low:2131165400
- drawable:ic_clear_black_24:2131165407
- drawable:ic_external:2131165414
- drawable:ic_logout:2131165423
- drawable:ic_m3_chip_check:2131165424
- drawable:ic_open:2131165433
- drawable:ic_search_black_24:2131165440
- drawable:logo_lu:2131165447
- drawable:m3_tabs_transparent_background:2131165459
- drawable:material_ic_menu_arrow_up_black_24dp:2131165469
- drawable:mtrl_bottomsheet_drag_handle:2131165470
+ drawable:bg_quick_blue:2131165350
+ drawable:bg_quick_cyan:2131165351
+ drawable:bg_quick_green:2131165352
+ drawable:bg_quick_orange:2131165353
+ drawable:bg_quick_pink:2131165354
+ drawable:bg_quick_purple:2131165355
+ drawable:bg_quick_red:2131165356
+ drawable:bg_quick_slate:2131165357
+ drawable:bg_quick_teal:2131165358
+ drawable:bg_quick_yellow:2131165359
+ drawable:bg_search_bar:2131165362
+ drawable:bg_search_glass:2131165363
+ drawable:bg_stats_gradient:2131165373
+ drawable:ic_call_answer:2131165396
+ drawable:ic_call_answer_low:2131165397
+ drawable:ic_call_answer_video:2131165398
+ drawable:ic_call_answer_video_low:2131165399
+ drawable:ic_call_decline:2131165400
+ drawable:ic_call_decline_low:2131165401
+ drawable:ic_clear_black_24:2131165408
+ drawable:ic_external:2131165415
+ drawable:ic_logout:2131165424
+ drawable:ic_m3_chip_check:2131165425
+ drawable:ic_open:2131165434
+ drawable:ic_search_black_24:2131165441
+ drawable:logo_lu:2131165448
+ drawable:m3_tabs_transparent_background:2131165460
+ drawable:material_ic_menu_arrow_up_black_24dp:2131165470
+ drawable:mtrl_bottomsheet_drag_handle:2131165471
  id:ALT:2131230720
  id:CTRL:2131230723
  id:FUNCTION:2131230724
@@ -22500,6 +22498,7 @@ Skipped unused resource res/color-v31/m3_ref_palette_dynamic_neutral92.xml: 318 
 Skipped unused resource res/color-v31/m3_ref_palette_dynamic_neutral94.xml: 318 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/color-v31/m3_ref_palette_dynamic_neutral96.xml: 318 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/color-v31/m3_ref_palette_dynamic_neutral98.xml: 318 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/bg_ad.xml: 572 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/bg_banner_shape.xml: 369 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/bg_btn_round.xml: 391 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/bg_button_primary_small.xml: 368 bytes (replaced with small dummy file of size 9 bytes)

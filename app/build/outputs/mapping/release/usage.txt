@@ -19237,6 +19237,7 @@ com.luwu.app.R$drawable:
     public static int bg_input
     public static int bg_logo_round
     public static int bg_logout
+    public static int bg_play_round
     public static int bg_quick_blue
     public static int bg_quick_cyan
     public static int bg_quick_green
