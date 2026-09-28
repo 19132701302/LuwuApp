@@ -103,7 +103,7 @@ class SplashAdActivity : AppCompatActivity() {
         adEnable = true
         adImage = Prefs.getSplashNextUrl(this)
         adTarget = Prefs.getSplashNextTarget(this)
-        countdown = Prefs.getSplashNextDuration(this).coerceIn(1, 10)
+        countdown = Prefs.getSplashNextDuration(this).coerceIn(2, 10)
         skipText = Prefs.getSplashNextSkipText(this)
         oncePerDay = Prefs.getSplashNextOnce(this)
 
@@ -155,7 +155,7 @@ class SplashAdActivity : AppCompatActivity() {
         }
     }
 
-    /** 秒开路径的后台刷新：广告变更则换图；WiFi 下预下载下一张 */
+    /** 秒开路径的后台刷新：广告变更则换图；时长/文案/落地页每次同步；WiFi 下预下载下一张 */
     private fun refreshConfig() {
         ApiClient.get("splash_ad") { json, _ ->
             if (finished) return@get
@@ -163,15 +163,29 @@ class SplashAdActivity : AppCompatActivity() {
             val enable = json.optBoolean("enable", false)
             val newImage = json.optString("image_url", "")
             if (!enable || newImage.isBlank()) return@get
+
+            // v9.3 修复：时长/跳过文案/每日一次/落地页每次响应都同步（防止缓存旧时长导致 1 秒闪跳）
+            val newDuration = json.optInt("duration", 3).coerceIn(1, 10)
+            val newSkip = json.optString("skip_text", "跳过")
+            val newOnce = json.optBoolean("once_per_day", false)
+            val newTarget = json.optString("target_url", "")
+            var configChanged = false
+            if (newDuration != countdown || newSkip != skipText || newOnce != oncePerDay || newTarget != adTarget) {
+                countdown = newDuration
+                skipText = newSkip
+                oncePerDay = newOnce
+                adTarget = newTarget
+                configChanged = true
+            }
+
             if (newImage != adImage) {
                 // 后台配置已更换：换新图展示
                 adImage = newImage
-                adTarget = json.optString("target_url", "")
-                countdown = json.optInt("duration", 3).coerceIn(1, 10)
-                skipText = json.optString("skip_text", "跳过")
-                oncePerDay = json.optBoolean("once_per_day", false)
-                btnSkip?.text = "$countdown $skipText"
                 showAd()
+            } else if (configChanged) {
+                // 广告未换但时长/文案有更新：刷新跳过按钮文案并重置倒计时
+                btnSkip?.text = "$countdown $skipText"
+                startCountdown()
             }
             saveNextConfig()
             // WiFi 下预下载下一张（当前图已磁盘缓存，此操作保证下次冷启动零网络）
@@ -201,8 +215,9 @@ class SplashAdActivity : AppCompatActivity() {
         // 按屏幕尺寸采样解码（inSampleSize），显著降低内存与解码耗时
         val dm = resources.displayMetrics
         ImageLoader.load(adImage, ivAd!!, "splash_$adImage", dm.widthPixels, dm.heightPixels, onError = {
-            // 图片加载失败（网络/磁盘均不可用）不阻塞：直接进首页
-            enterMain()
+            // v9.3 修复：图片加载失败时保留品牌层最短展示时长（1.5 秒）再进首页，避免 1 秒闪跳
+            handler.removeCallbacks(tickRunnable)
+            handler.postDelayed({ enterMain() }, 1500)
         })
         startCountdown()
 
