@@ -87,7 +87,6 @@ class ArticleDetailActivity : AppCompatActivity() {
         findViewById<View>(R.id.btn_favorite).setOnClickListener { toggleFavorite() }
         findViewById<View>(R.id.btn_like).setOnClickListener { toggleLike() }
         findViewById<View>(R.id.btn_comment_input).setOnClickListener { openComments() }
-        findViewById<View>(R.id.btn_back_top).setOnClickListener { webView?.scrollTo(0, 0) }
         findViewById<TextView>(R.id.btn_share).apply {
             val shareIcon = androidx.core.graphics.drawable.DrawableCompat.wrap(
                 ContextCompat.getDrawable(this@ArticleDetailActivity, R.drawable.ic_share)!!
@@ -135,7 +134,6 @@ class ArticleDetailActivity : AppCompatActivity() {
                 super.onPageFinished(view, url)
                 // 页面渲染完成后：隐藏加载进度条、显示返回顶部按钮
                 findViewById<View>(R.id.loading_progress)?.visibility = View.GONE
-                findViewById<View>(R.id.btn_back_top)?.visibility = View.VISIBLE
                 // 注入滚动监听：实时回传阅读进度百分比（防抖 150ms）
                 webView?.evaluateJavascript(
                     "(function(){var t=null;function u(){var d=document.documentElement||document.body;var m=d.scrollHeight-window.innerHeight;var p=m>0?Math.round(window.scrollY/m*100):0;try{luwuApp.luwuProgress(p);}catch(e){}}window.onscroll=function(){if(t){clearTimeout(t)}t=setTimeout(u,150);};u();})()",
@@ -198,7 +196,6 @@ class ArticleDetailActivity : AppCompatActivity() {
             @android.webkit.JavascriptInterface
             fun luwuProgress(pct: Int) {
                 runOnUiThread {
-                    findViewById<TextView>(R.id.tv_read_progress)?.text = "${pct.coerceIn(0, 100)}%"
                 }
             }
 
@@ -723,7 +720,6 @@ class ArticleDetailActivity : AppCompatActivity() {
 
     private fun renderError(msg: String) {
         findViewById<View>(R.id.loading_progress)?.visibility = View.GONE
-        findViewById<View>(R.id.btn_back_top)?.visibility = View.GONE
         val html = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><style>body{font-family:sans-serif;margin:0;padding:60px 24px;color:#888;text-align:center;font-size:14px;line-height:1.8}</style></head><body><div style='font-size:15px;color:#BBB'>页面出错</div><br>$msg</body></html>"
         webView?.loadDataWithBaseURL(null, html, "text/html", "utf-8", null)
     }

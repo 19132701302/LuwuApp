@@ -7639,7 +7639,6 @@ androidx.core.widget.NestedScrollView:
     public boolean isFillViewport()
     public boolean isSmoothScrollingEnabled()
     public final void smoothScrollBy(int,int,int)
-    public final void smoothScrollTo(int,int)
     public final void smoothScrollTo(int,int,int)
 androidx.core.widget.PopupMenuCompat$Api19Impl
 androidx.core.widget.PopupMenuCompat
@@ -19174,6 +19173,7 @@ com.luwu.app.R$color:
     public static int bg_app
     public static int bg_neutral_soft
     public static int bg_page
+    public static int brand
     public static int brand_active
     public static int brand_dark
     public static int brand_deep
@@ -19266,10 +19266,6 @@ com.luwu.app.R$drawable:
     public static int ic_article
     public static int ic_back
     public static int ic_back_top
-    public static int ic_cat_poster
-    public static int ic_cat_trend
-    public static int ic_cat_vip
-    public static int ic_cat_wallet
     public static int ic_category
     public static int ic_chevron_right
     public static int ic_clear_keyword
@@ -19301,21 +19297,20 @@ com.luwu.app.R$drawable:
 com.luwu.app.R$id:
     public static int bottom_bar
     public static int cat_scroll
-    public static int iv_cat_icon
     public static int stats_card
     public static int stats_row
     public static int til_password
     public static int til_username
     public static int tv_about_logo
-    public static int tv_cat_desc
-    public static int tv_cat_icon
     public static int tv_history_title
     public static int tv_hot_title
     public static int tv_logo_brand
     public static int tv_reply_target
+    public static int tv_tab_indicator
+    public static int tv_tab_name
     private void <init>()
 com.luwu.app.R$layout:
-    public static int item_home_cat
+    public static int item_home_tab
     public static int item_skeleton
     private void <init>()
 com.luwu.app.R$menu
@@ -19507,15 +19502,8 @@ com.luwu.app.ui.HomeFragment$HomeCat:
     public final java.lang.String component5()
     public final com.luwu.app.ui.HomeFragment$HomeCat copy(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
     public static synthetic com.luwu.app.ui.HomeFragment$HomeCat copy$default(com.luwu.app.ui.HomeFragment$HomeCat,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.Object)
-    public final java.lang.String getColor()
-    public final java.lang.String getDesc()
-    public final java.lang.String getIcon()
-com.luwu.app.ui.HomeFragment$HomeCatAdapter$VH
-com.luwu.app.ui.HomeFragment$HomeCatAdapter$onBindViewHolder$1
-com.luwu.app.ui.HomeFragment$HomeCatAdapter
 com.luwu.app.ui.HomeFragment:
     private final int darken(int)
-com.luwu.app.ui.HomeFragmentKt
 com.luwu.app.ui.PayWebViewActivity$Companion:
     public final android.content.Intent newIntent(android.content.Context,java.lang.String)
 com.luwu.app.ui.ProfileFragment:
@@ -30837,6 +30825,7 @@ androidx.core.widget.NestedScrollView:
     public final void smoothScrollBy(int,int)
     public static void smoothScrollTo()
     public final void smoothScrollTo(int)
+    public final void smoothScrollTo(int,boolean)
     public final void startNestedScroll(int,int)
 androidx.core.widget.PopupWindowCompat
 androidx.core.widget.TextViewCompat$OreoCallback:
@@ -35502,9 +35491,11 @@ com.luwu.app.adapter.BannerAdapter:
     public static void onBindViewHolder$5()
     public static void onBindViewHolder$6()
     public static void onBindViewHolder$7()
+    public static void onBindViewHolder$8()
     public static com.luwu.app.adapter.BannerAdapter$Holder onCreateViewHolder()
     public static com.luwu.app.ui.CategoryFragment$CategoryAdapter$VH onCreateViewHolder()
     public static com.luwu.app.ui.FollowListActivity$FollowAdapter$Holder onCreateViewHolder()
+    public static com.luwu.app.ui.HomeFragment$HomeCatAdapter$VH onCreateViewHolder()
     public static com.luwu.app.ui.NotifyActivity$NotifyAdapter$Holder onCreateViewHolder()
     public static com.luwu.app.ui.UserProfileActivity$UserPostsAdapter$Holder onCreateViewHolder()
     public final void setItems(java.util.List)
@@ -35645,6 +35636,7 @@ com.luwu.app.ui.AboutActivity:
     public static final int access$dp(com.luwu.app.ui.AboutActivity)
     public static int dp()
     public static void loadChangelog()
+com.luwu.app.ui.AnnouncementDialog$$InternalSyntheticLambda$3$ae40c5e87b713c97b5a7e4b4cc909c6777a7242ba91efc071411c1d839483e88$0
 com.luwu.app.ui.AnnouncementDialog$$InternalSyntheticLambda$3$ae40c5e87b713c97b5a7e4b4cc909c6777a7242ba91efc071411c1d839483e88$2
 com.luwu.app.ui.AnnouncementDialog
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$1
@@ -35652,7 +35644,6 @@ com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$3
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$4
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$5
-com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$6
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$d602febce8f5be5b6cc24ca71afe1b82db4e1e684b3f5fdb71964740a0b87f35$0
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$d602febce8f5be5b6cc24ca71afe1b82db4e1e684b3f5fdb71964740a0b87f35$2
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$3$da1ffb4c63a0c9dafc5efcab0ee0968c764981aca7f4b400eb7143a87a233791$1
@@ -35661,7 +35652,7 @@ com.luwu.app.ui.ArticleDetailActivity$ImagePagerAdapter$$InternalSyntheticLambda
 com.luwu.app.ui.ArticleDetailActivity$ImagePagerAdapter:
     public static kotlin.jvm.functions.Function1 getOnLongClick()
     public static void onBindViewHolder$10()
-    public static void onBindViewHolder$8()
+    public static void onBindViewHolder$11()
     public static void onBindViewHolder$9()
     public static com.luwu.app.ui.ArticleDetailActivity$ImagePagerHolder onCreateViewHolder()
     public static com.luwu.app.ui.CommentsActivity$CommentAdapter$Holder onCreateViewHolder()
@@ -35681,7 +35672,6 @@ com.luwu.app.ui.ArticleDetailActivity$previewImages$2
 com.luwu.app.ui.ArticleDetailActivity$reportPost$1$1
 com.luwu.app.ui.ArticleDetailActivity$setupWebView$2$$InternalSyntheticLambda$2$259e6683be46f89c698bde788d8dc20e75c633d5b51ccfd88d962549fa27c995$0
 com.luwu.app.ui.ArticleDetailActivity$setupWebView$2$$InternalSyntheticLambda$2$62fc71f12982df5b87f736380d97e54a49778682a0fce9dfeaae6682dc6fdfc5$0
-com.luwu.app.ui.ArticleDetailActivity$setupWebView$2$$InternalSyntheticLambda$2$7fb5940a675e3b87c5a02728596fe1ba11178c6a3b165571d780c593e7de6e52$0
 com.luwu.app.ui.ArticleDetailActivity$setupWebView$2$$InternalSyntheticLambda$2$93713828faac7bfda056896078d5b491f9f8676345ea52026c1083af37cc01d4$0
 com.luwu.app.ui.ArticleDetailActivity$setupWebView$2$$InternalSyntheticLambda$2$9f71c1f1d8c40ebf8200bc31504ec2be0db247a1b038092bfabf1b9a339323bb$0
 com.luwu.app.ui.ArticleDetailActivity$setupWebView$2$$InternalSyntheticLambda$2$df7e082cb714ab222546d980c33a0fa9e5702b1323eeb24d36c0f2c20b021837$0
@@ -35733,7 +35723,7 @@ com.luwu.app.ui.CategoryFragment$CategoryAdapter$VH:
     public static android.widget.TextView getCount()
     public static android.widget.ImageView getImg()
     public static android.widget.TextView getName()
-    public static android.view.View getRoot()
+    public final android.view.View getRoot()
     public static android.widget.TextView getTv()
 com.luwu.app.ui.CategoryFragment$CategoryAdapter$onBindViewHolder$1
 com.luwu.app.ui.CategoryFragment$CategoryAdapter
@@ -35850,29 +35840,39 @@ com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$2$04e344b1122764cff9917c85
 com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$2$04e344b1122764cff9917c852f49d28b9041f80cf87295b00ba3b81cb7405692$3
 com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$2$04e344b1122764cff9917c852f49d28b9041f80cf87295b00ba3b81cb7405692$4
 com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$2$04e344b1122764cff9917c852f49d28b9041f80cf87295b00ba3b81cb7405692$5
+com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$2$04e344b1122764cff9917c852f49d28b9041f80cf87295b00ba3b81cb7405692$6
 com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$3$4817463a1a8361410da03b2f51fc1631fe2f1ee288c4fb8ac50621b18adb918a$0
 com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$3$ae39275f7f6b5443a9a0a13e4b57aed061e30322343aaada482b32b320629355$0
 com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$3$de4374dedb6f7d09955fd1e7e21c70276fc1d27c65c6c1ebad651016451351b4$0
 com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$3$e1b1517f24098493e4d83fb804c8d7cd8820a7a0fa2e2e85cb7fdbb4da21e28c$0
-com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$4$b860acb14b96bef53b828260a1564add57f51066d92540a5a58a8bcbf6ef8648$1
+com.luwu.app.ui.HomeFragment$$InternalSyntheticLambda$4$d6075d00c2e86e0bb079946d57ba1d4210226876b2860ad2ef89ce2373b5880d$1
 com.luwu.app.ui.HomeFragment$HomeCat:
+    public static java.lang.String getColor()
+    public static java.lang.String getDesc()
+    public static java.lang.String getIcon()
     public static java.lang.String getName()
     public static java.lang.String getSlug()
+com.luwu.app.ui.HomeFragment$HomeCatAdapter$$InternalSyntheticLambda$3$33449f25405320bac367d9b0de1b6b51d1aabf2a929512f0318047355e85db49$0
+com.luwu.app.ui.HomeFragment$HomeCatAdapter$VH:
+    public final android.view.View getRoot()
+com.luwu.app.ui.HomeFragment$HomeCatAdapter$onBindViewHolder$1:
+    public final void invoke()
+com.luwu.app.ui.HomeFragment$HomeCatAdapter
 com.luwu.app.ui.HomeFragment$bannerRunnable$1
-com.luwu.app.ui.HomeFragment$bindHomeTabs$1$$InternalSyntheticLambda$3$37a8507415f726fd42140d81e29392f86f1a078743e1331ea4ae6e3b79df50cb$1
-com.luwu.app.ui.HomeFragment$bindHomeTabs$1$onCreateViewHolder$1
-com.luwu.app.ui.HomeFragment$bindHomeTabs$1
-com.luwu.app.ui.HomeFragment$loadPage$2:
+com.luwu.app.ui.HomeFragment$bindHomeCats$1:
+    public final void invoke(com.luwu.app.api.PostItem)
+    public final void invoke(java.lang.String)
+    public static void invoke$5()
+com.luwu.app.ui.HomeFragment$loadPage$1:
     public final void invoke(org.json.JSONObject,java.lang.String)
     public final void invoke$2()
 com.luwu.app.ui.HomeFragment$loadPageFromRss$1
-com.luwu.app.ui.HomeFragment$onViewCreated$11:
-    public final void invoke(com.luwu.app.api.PostItem)
-    public final void invoke(java.lang.String)
 com.luwu.app.ui.HomeFragment$onViewCreated$12
+com.luwu.app.ui.HomeFragment$onViewCreated$13
 com.luwu.app.ui.HomeFragment$onViewCreated$7
 com.luwu.app.ui.HomeFragment$onViewCreated$8
 com.luwu.app.ui.HomeFragment$onViewCreated$onBottom$1
+com.luwu.app.ui.HomeFragment$onViewCreated$updateBackTop$1
 com.luwu.app.ui.HomeFragment$refreshBellBadge$1
 com.luwu.app.ui.HomeFragment:
     public static final void access$openDetail(com.luwu.app.ui.HomeFragment,com.luwu.app.api.PostItem)
@@ -35889,6 +35889,23 @@ com.luwu.app.ui.HomeFragment:
     public static void showError$2()
     public static void showSkeleton()
     public static void updateBanner$1()
+com.luwu.app.ui.HomeFragmentKt:
+    public static final kotlin.text.MatcherMatchResult access$findNext(java.util.regex.Matcher,int,java.lang.CharSequence)
+    public static int compareValues(java.lang.Comparable,java.lang.Comparable)
+    public static final int differenceModulo(int,int,int)
+    public static kotlin.ranges.IntProgression downTo(int,int)
+    public static java.util.List emptyList()
+    public static java.util.Set emptySet()
+    public static final void enumEntries(java.lang.Enum[])
+    public static java.lang.Object getCOROUTINE_SUSPENDED()
+    public static final androidx.core.view.ViewGroupKt$iterator$1 iterator(java.lang.Object[])
+    public static kotlin.SynchronizedLazyImpl lazy(androidx.lifecycle.SavedStateHandlesProvider$viewModel$2)
+    public static final int mod(int,int)
+    public static java.util.Comparator naturalOrder()
+    public static final java.util.List optimizeReadOnlyList(java.util.List)
+    public static androidx.core.view.ViewGroupKt$children$1 sequence(kotlin.jvm.functions.Function2)
+    public static java.util.Set setOf(java.lang.Object)
+    public static void throwIndexOverflow()
 com.luwu.app.ui.LoginActivity$$InternalSyntheticLambda$1$2d18f47d687cc3d3df313408f300c4d97962b71a726b0e2efc7f0f07d9518119$1
 com.luwu.app.ui.LoginActivity$doLogin$1
 com.luwu.app.ui.LoginActivity:
@@ -36199,26 +36216,8 @@ com.luwu.app.util.Util:
     public static long getCacheSize()
     public static boolean isDarkColor()
     public static boolean isDarkTheme()
-kotlin.ExceptionsKt:
-    public static final kotlin.text.MatcherMatchResult access$findNext(java.util.regex.Matcher,int,java.lang.CharSequence)
-    public static int compareValues(java.lang.Comparable,java.lang.Comparable)
-    public static final int differenceModulo(int,int,int)
-    public static kotlin.ranges.IntProgression downTo(int,int)
-    public static java.util.List emptyList()
-    public static java.util.Set emptySet()
-    public static final void enumEntries(java.lang.Enum[])
-    public static java.lang.Object getCOROUTINE_SUSPENDED()
-    public static final kotlin.jvm.functions.Function1 getIndentFunction$StringsKt__IndentKt()
-    public static final androidx.core.view.ViewGroupKt$iterator$1 iterator(java.lang.Object[])
-    public static kotlin.SynchronizedLazyImpl lazy(androidx.lifecycle.SavedStateHandlesProvider$viewModel$2)
-    public static final int mod(int,int)
-    public static java.util.Comparator naturalOrder()
-    public static final java.util.List optimizeReadOnlyList(java.util.List)
-    public static androidx.core.view.ViewGroupKt$children$1 sequence(kotlin.jvm.functions.Function2)
-    public static java.util.Set setOf(java.lang.Object)
-    public static void throwIndexOverflow()
+kotlin.ExceptionsKt
 kotlin.ExceptionsKt__ExceptionsKt
-kotlin.Function
 kotlin.Lazy
 kotlin.LazyKt
 kotlin.LazyKt__LazyJVMKt
@@ -36317,6 +36316,7 @@ kotlin.collections.MapsKt__MapsJVMKt
 kotlin.collections.MapsKt__MapsKt
 kotlin.collections.MapsKt___MapsJvmKt:
     public static java.util.Map emptyMap()
+    public static varargs java.util.LinkedHashMap mutableMapOf(kotlin.Pair[])
     public static java.util.LinkedHashMap plus(java.util.Map,java.util.Map)
     public static java.util.LinkedHashMap toMutableMap(java.util.Map)
 kotlin.collections.MapsKt___MapsKt
@@ -36559,7 +36559,12 @@ kotlin.text.StringsKt
 kotlin.text.StringsKt__AppendableKt
 kotlin.text.StringsKt__IndentKt$getIndentFunction$1
 kotlin.text.StringsKt__IndentKt$getIndentFunction$2
-kotlin.text.StringsKt__IndentKt
+kotlin.text.StringsKt__IndentKt:
+    public static final byte[] asUtf8ToByteArray(java.lang.String)
+    public static final okio.RealBufferedSink buffer(okio.Sink)
+    public static final okio.RealBufferedSource buffer(okio.Source)
+    public static final kotlin.jvm.functions.Function1 getIndentFunction$StringsKt__IndentKt()
+    public static final java.lang.String toUtf8String(byte[])
 kotlin.text.StringsKt__RegexExtensionsJVMKt
 kotlin.text.StringsKt__StringBuilderJVMKt
 kotlin.text.StringsKt__StringNumberConversionsJVMKt
@@ -36577,11 +36582,7 @@ kotlin.text.StringsKt__StringsKt:
 kotlin.text.StringsKt___StringsJvmKt
 kotlinx.coroutines.Job$Key
 kotlinx.coroutines.Job
-kotlinx.coroutines.JobKt:
-    public static final byte[] asUtf8ToByteArray(java.lang.String)
-    public static final okio.RealBufferedSink buffer(okio.Sink)
-    public static final okio.RealBufferedSource buffer(okio.Source)
-    public static final java.lang.String toUtf8String(byte[])
+kotlinx.coroutines.JobKt
 kotlinx.coroutines.JobKt__JobKt
 okhttp3.Address:
     public static okhttp3.CertificatePinner certificatePinner()

@@ -185,17 +185,15 @@
                             android:orientation="horizontal" />
                     </FrameLayout>
 
-                    <!-- 频道 Tab 栏（头条式：横向滚动分类，点击切换信息流） -->
+                    <!-- 分类金刚区（2×2 大图标入口，商业级卡片） -->
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/home_tabs"
+                        android:id="@+id/home_cats"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:clipToPadding="false"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="12dp"
                         android:nestedScrollingEnabled="false"
-                        android:overScrollMode="never"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp" />
+                        android:overScrollMode="never" />
 
                     <!-- 首页广告位（文字/图片，固定高度不跳动） -->
                     <!-- 首页广告位：图片按比例完整显示，文字固定高度 -->
@@ -407,4 +405,24 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
+    <!-- 回到顶部悬浮按钮（仅首页）：滚动后显示，点击平滑回顶 -->
+    <FrameLayout
+        android:id="@+id/btn_back_top_home"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/bg_back_top"
+        android:elevation="6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:contentDescription="回到顶部"
+            android:src="@drawable/ic_back_top" />
+    </FrameLayout>
 </FrameLayout>

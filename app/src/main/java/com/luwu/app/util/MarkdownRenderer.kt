@@ -200,9 +200,9 @@ object MarkdownRenderer {
                 "</div>" +
                 "<div class=\"paid-price\"><span class=\"paid-rmb\">¥</span><b>$price</b></div>" +
                 "<div class=\"paid-methods\">" +
-                "  <button class=\"pm pm-wx\" type=\"button\" data-m=\"wxpay\"><span class=\"pm-ico\">微</span>微信支付</button>" +
-                "  <button class=\"pm pm-ali\" type=\"button\" data-m=\"alipay\"><span class=\"pm-ico\">支</span>支付宝</button>" +
-                "  <button class=\"pm pm-qq\" type=\"button\" data-m=\"qqpay\"><span class=\"pm-ico\">Q</span>QQ支付</button>" +
+                "  <button class=\"pm pm-wx\" type=\"button\" data-m=\"wxpay\"><span class=\"pm-ico\"></span>微信支付</button>" +
+                "  <button class=\"pm pm-ali\" type=\"button\" data-m=\"alipay\"><span class=\"pm-ico\"></span>支付宝</button>" +
+                "  <button class=\"pm pm-qq\" type=\"button\" data-m=\"qqpay\"><span class=\"pm-ico\"></span>QQ支付</button>" +
                 "</div>" +
                 "<button class=\"paid-btn\" type=\"button\">立即支付 <b>¥$price</b></button>" +
                 "<div class=\"paid-tip\">支付成功后自动显示下载地址 · 订单可在「我的订单」查看</div>" +

@@ -35,7 +35,6 @@ class HomeFragment : Fragment() {
     private var loading = false
     private var hasMore = true
     private var sort = "latest" // latest / hot / comments / likes
-    private var activeCatSlug: String? = null // 频道 Tab 当前分类（null=推荐全部分类）
     private var bannerRecycler: RecyclerView? = null
     private var bannerDots: LinearLayout? = null
     private var bannerAdapter: BannerAdapter? = null
@@ -80,7 +79,7 @@ class HomeFragment : Fragment() {
             (activity as? MainActivity)?.switchToProfile()
         }
         refreshAvatar()
-        bindHomeTabs(view)
+        bindHomeCats(view)
         view.findViewById<View>(R.id.btn_retry).setOnClickListener {
             hideErrorView()
             refresh()
@@ -107,10 +106,24 @@ class HomeFragment : Fragment() {
                 }
             }
         }
+        val btnBackTop = view.findViewById<View>(R.id.btn_back_top_home)
+        btnBackTop?.setOnClickListener {
+            scrollView.smoothScrollTo(0, 0)
+        }
+        val updateBackTop = {
+            val show = scrollView.scrollY > 800
+            btnBackTop?.visibility = if (show) View.VISIBLE else View.GONE
+        }
         if (android.os.Build.VERSION.SDK_INT >= 23) {
-            scrollView.setOnScrollChangeListener { _, _, _, _, _ -> onBottom() }
+            scrollView.setOnScrollChangeListener { _, _, _, _, _ ->
+                onBottom()
+                updateBackTop()
+            }
         } else {
-            scrollView.viewTreeObserver.addOnScrollChangedListener { onBottom() }
+            scrollView.viewTreeObserver.addOnScrollChangedListener {
+                onBottom()
+                updateBackTop()
+            }
         }
 
         // 轮播：横向 + 吸附对齐 + 自动播放
@@ -178,7 +191,7 @@ class HomeFragment : Fragment() {
         v.post {
             val ads = AppState.ads ?: return@post
             // 分类卡片：后台配置就绪后重新绑定（修复首页分类一直显示内置默认、后台矢量图标不生效的问题）
-            bindHomeTabs(v)
+            bindHomeCats(v)
             val list = ads.homeTop
             val tv = tvHomeAd ?: return@post
             val iv = v.findViewById<View>(R.id.iv_home_ad) as? android.widget.ImageView ?: return@post
@@ -292,19 +305,17 @@ class HomeFragment : Fragment() {
             return
         }
 
-        val params = mutableMapOf(
+        ApiClient.get("home", mapOf(
             "sort" to sort,
             "page" to page.toString(),
             "pageSize" to "20",
-        )
-        activeCatSlug?.let { params["cat"] = it }
-        ApiClient.get("home", params) { json, err ->
+        )) { json, err ->
             swipe?.isRefreshing = false
             loading = false
             if (json == null || !json.optBoolean("ok", false)) {
                 // 网络失败 → 优先用离线缓存兜底（弱网/断网可看已加载内容）
                 if (page == 1 && posts.isEmpty()) {
-                    val cached = com.luwu.app.util.CacheManager.getList(requireContext(), "home_${sort}_${activeCatSlug ?: "all"}_1")
+                    val cached = com.luwu.app.util.CacheManager.getList(requireContext(), "home_${sort}_1")
                     if (cached != null && cached.optBoolean("ok", false)) {
                         Util.toast(requireContext(), "网络不可用，显示缓存内容")
                         bindFromJson(cached)
@@ -325,7 +336,7 @@ class HomeFragment : Fragment() {
             }
             AppState.pluginAvailable = true
             // 写入离线缓存（首页列表 10 分钟有效）
-            com.luwu.app.util.CacheManager.putJson(requireContext(), "home_${sort}_${activeCatSlug ?: "all"}_$page", json)
+            com.luwu.app.util.CacheManager.putJson(requireContext(), "home_${sort}_$page", json)
             hideErrorView()
             bindFromJson(json)
         }
@@ -378,7 +389,7 @@ class HomeFragment : Fragment() {
             if (posts.isNotEmpty()) return@post
             sc.visibility = View.VISIBLE
             view?.findViewById<View>(R.id.banner_container)?.visibility = View.GONE
-            view?.findViewById<View>(R.id.home_tabs)?.visibility = View.GONE
+            view?.findViewById<View>(R.id.home_cats)?.visibility = View.GONE
             view?.findViewById<View>(R.id.home_ad_container)?.visibility = View.GONE
             recycler?.visibility = View.GONE
         }
@@ -389,7 +400,7 @@ class HomeFragment : Fragment() {
             val sc = view?.findViewById<View>(R.id.skeleton_container) ?: return@post
             sc.visibility = View.GONE
             view?.findViewById<View>(R.id.banner_container)?.visibility = View.VISIBLE
-            view?.findViewById<View>(R.id.home_tabs)?.visibility = View.VISIBLE
+            view?.findViewById<View>(R.id.home_cats)?.visibility = View.VISIBLE
             recycler?.visibility = View.VISIBLE
             // 重新按广告配置恢复广告位可见性（showSkeleton 会隐藏它，此处必须还原）
             onAdsLoaded()
@@ -408,10 +419,10 @@ class HomeFragment : Fragment() {
         hsv[2] = (hsv[2] * 0.82f).coerceAtLeast(0f)
         return android.graphics.Color.HSVToColor(hsv)
     }
-    /** 频道 Tab 栏（头条式）：推荐 + 后台 homeCats 分类，点击切换信息流分类 */
-    private fun bindHomeTabs(view: View) {
-        val rv = view.findViewById<RecyclerView>(R.id.home_tabs) ?: return
-        rv.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+    /** 分类金刚区（2×2 大图标入口）：后台 homeCats 优先，空则内置默认 4 分类 */
+    private fun bindHomeCats(view: View) {
+        val rv = view.findViewById<RecyclerView>(R.id.home_cats) ?: return
+        rv.layoutManager = androidx.recyclerview.widget.GridLayoutManager(requireContext(), 2)
         val conf = AppState.ads?.homeCats
         val cats = if (!conf.isNullOrEmpty()) conf.map { HomeCat(it.slug, it.name, it.desc, it.icon, it.color) } else listOf(
             HomeCat("default", "网站源码", "汇集优质源码资源", "源", "teal"),
@@ -419,34 +430,8 @@ class HomeFragment : Fragment() {
             HomeCat("yingyong", "绿色软件", "丰富软件资源", "软", "blue"),
             HomeCat("fulihuodong", "活动线报", "创意无限，福利不断", "福", "yellow"),
         )
-        val tabs = mutableListOf<HomeCat?>()
-        tabs.add(null) // 推荐
-        tabs.addAll(cats)
-        rv.adapter = object : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-            override fun onCreateViewHolder(parent: android.view.ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-                val v = LayoutInflater.from(parent.context).inflate(R.layout.item_home_tab, parent, false)
-                return object : RecyclerView.ViewHolder(v) {}
-            }
-            override fun getItemCount(): Int = tabs.size
-            override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-                val cat = tabs[position]
-                val tv = holder.itemView.findViewById<TextView>(R.id.tv_tab_name)
-                val ind = holder.itemView.findViewById<View>(R.id.tv_tab_indicator)
-                val name = if (cat == null) "推荐" else cat.name
-                tv.text = name
-                val selected = activeCatSlug == cat?.slug
-                tv.setTextColor(resources.getColor(if (selected) R.color.brand else R.color.ink_2, null))
-                tv.textSize = if (selected) 15.5f else 14.5f
-                tv.setTypeface(null, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
-                ind.visibility = if (selected) View.VISIBLE else View.GONE
-                holder.itemView.setOnClickListener {
-                    val target = cat?.slug
-                    if (target == activeCatSlug) return@setOnClickListener
-                    activeCatSlug = target
-                    rv.adapter?.notifyDataSetChanged()
-                    refresh()
-                }
-            }
+        rv.adapter = HomeCatAdapter(cats) { cat ->
+            startActivity(CategoryPostsActivity.newIntent(requireContext(), cat.slug, cat.name))
         }
         bindSortBar()
     }

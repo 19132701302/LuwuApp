@@ -3246,7 +3246,7 @@ id btn_ann_link
 id btn_ann_ok
 id btn_avatar
 id btn_back
-id btn_back_top
+id btn_back_top_home
 id btn_bell
 id btn_block
 id btn_cancel_reply
@@ -3405,8 +3405,8 @@ id history_container
 id home
 id homeAsUp
 id home_ad_container
+id home_cats
 id home_scroll
-id home_tabs
 id honorRequest
 id hot_container
 id icon
@@ -3776,7 +3776,6 @@ id tv_pay_icon
 id tv_percent
 id tv_perf
 id tv_qq
-id tv_read_progress
 id tv_reply_target
 id tv_reply_to
 id tv_settings_version

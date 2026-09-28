@@ -182,39 +182,4 @@
     </LinearLayout>
     </LinearLayout>
 
-    <!-- 返回顶部悬浮按钮：阅读长文时一键回顶，按钮内实时显示阅读进度 -->
-    <FrameLayout
-        android:id="@+id/btn_back_top"
-        android:layout_width="52dp"
-        android:layout_height="52dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="96dp"
-        android:background="@drawable/bg_back_top"
-        android:elevation="6dp"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_read_progress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0%"
-                android:textColor="@color/white"
-                android:textSize="9sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginTop="1dp"
-                android:contentDescription="返回顶部"
-                android:src="@drawable/ic_back_top" />
-        </LinearLayout>
-    </FrameLayout>
 </FrameLayout>
