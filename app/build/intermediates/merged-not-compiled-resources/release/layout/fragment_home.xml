@@ -19,11 +19,6 @@
         android:orientation="vertical"
         android:fitsSystemWindows="true">
 
-android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            
-            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -138,6 +133,7 @@ android:layout_width="match_parent"
                     </FrameLayout>
                 </LinearLayout>
             </LinearLayout>
+        </LinearLayout>
         <!-- 滚动区：轮播 → 广告 → 文章，整体上下滚动 -->
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh"
@@ -404,8 +400,6 @@ android:layout_width="match_parent"
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    </LinearLayout>
-
 
     <!-- 回到顶部悬浮按钮（仅首页）：滚动后显示，点击平滑回顶 -->
     <FrameLayout

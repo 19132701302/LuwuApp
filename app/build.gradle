@@ -20,8 +20,8 @@ android {
         applicationId "com.luwu.app"
         minSdk 21
         targetSdk 34
-        versionCode 72
-        versionName "9.4.6"
+        versionCode 73
+        versionName "9.4.7"
     }
 
     buildTypes {
