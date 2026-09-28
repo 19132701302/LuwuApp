@@ -19570,7 +19570,7 @@ com.luwu.app.util.Util$renderContent$1
 com.luwu.app.util.Util$renderContent$2
 com.luwu.app.util.Util$renderContent$3
 com.luwu.app.util.Util:
-    public static synthetic java.lang.String buildDetailHtml$default(com.luwu.app.util.Util,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,int,java.lang.Object)
+    public static synthetic java.lang.String buildDetailHtml$default(com.luwu.app.util.Util,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,int,int,java.lang.Object)
     public final boolean isDarkTheme(int)
     public final java.lang.String renderContent(java.lang.String)
     public final void showKeyboard(android.content.Context,android.view.View)
@@ -35657,6 +35657,7 @@ com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$3
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$4
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$5
+com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$f123b1f87d8a616e6ee036f3fd92b765e4ae16219e73062ad8b65d31a325bae6$0
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$15d6d3328b79e39b2caa3f13f451f7dea27528facb799860ab44e203addeb936$0
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$15d6d3328b79e39b2caa3f13f451f7dea27528facb799860ab44e203addeb936$4
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$15d6d3328b79e39b2caa3f13f451f7dea27528facb799860ab44e203addeb936$5

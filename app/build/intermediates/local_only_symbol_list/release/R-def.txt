@@ -285,6 +285,7 @@ id nav_favorite
 id nav_home
 id nav_profile
 id nav_publish
+id pb_footer
 id price_container
 id profile_stats
 id progress

@@ -197,9 +197,11 @@ class PostAdapter(
 
     inner class FooterHolder(v: View) : RecyclerView.ViewHolder(v) {
         private val tv: TextView = v.findViewById(R.id.tv_footer)
+        private val pb: android.widget.ProgressBar = v.findViewById(R.id.pb_footer)
 
         fun bind(loading: Boolean) {
-            tv.text = if (loading) "加载中…" else "没有更多了"
+            tv.text = if (loading) "正在加载…" else "已经到底啦"
+            pb.visibility = if (loading) android.view.View.VISIBLE else android.view.View.GONE
         }
     }
 }

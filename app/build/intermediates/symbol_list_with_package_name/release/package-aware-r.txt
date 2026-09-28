@@ -3586,6 +3586,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pb_footer
 id peekHeight
 id percent
 id pin

@@ -642,7 +642,7 @@ class ArticleDetailActivity : AppCompatActivity() {
             // 详情正文：一律用 App 原生排版渲染（无站内导航/无杂项广告），正文缺失时提示查看原文
             if (content.isNotBlank()) {
                 val dark = com.luwu.app.util.ThemeManager.isDarkNow(this)
-                val html = Util.buildDetailHtml(title, meta, content, thumb, dark) +
+                val html = Util.buildDetailHtml(title, meta, content, thumb, dark, id) +
                     relatedTemplate(json.optJSONArray("related"), dark) +
                     commentsTemplate(dark)
                 webView?.loadDataWithBaseURL(null, html, "text/html", "utf-8", null)
@@ -919,6 +919,13 @@ class ArticleDetailActivity : AppCompatActivity() {
         ).mutate()
         androidx.core.graphics.drawable.DrawableCompat.setTint(icon, color)
         btn.setCompoundDrawablesWithIntrinsicBounds(null, icon, null, null)
+        // 状态切换弹跳反馈（商业级微动效）
+        if (btn.tag != fav) {
+            btn.tag = fav
+            btn.animate().scaleX(1.18f).scaleY(1.18f).setDuration(110)
+                .withEndAction { btn.animate().scaleX(1f).scaleY(1f).setDuration(140).start() }
+                .start()
+        }
     }
 
     private fun refreshLikeState() {
@@ -932,6 +939,13 @@ class ArticleDetailActivity : AppCompatActivity() {
         androidx.core.graphics.drawable.DrawableCompat.setTint(icon, color)
         btn.setCompoundDrawablesWithIntrinsicBounds(null, icon, null, null)
         btn.text = if (likeCount > 0) "赞 $likeCount" else "点赞"
+        // 状态切换弹跳反馈（商业级微动效）
+        if (btn.tag != liked) {
+            btn.tag = liked
+            btn.animate().scaleX(1.18f).scaleY(1.18f).setDuration(110)
+                .withEndAction { btn.animate().scaleX(1f).scaleY(1f).setDuration(140).start() }
+                .start()
+        }
     }
 
     private fun toggleLike() {

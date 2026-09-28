@@ -135,9 +135,9 @@ object Util {
         return parts.joinToString(" · ")
     }
 
-    fun buildDetailHtml(title: String, meta: String, content: String, thumb: String = "", isDark: Boolean = false): String {
+    fun buildDetailHtml(title: String, meta: String, content: String, thumb: String = "", isDark: Boolean = false, cid: Int = 0): String {
         // Markdown 渲染（内部含 Joe 短代码保护）
-        val body = MarkdownRenderer.render(content)
+        val body = MarkdownRenderer.render(content, cid)
         // 正文首图与封面相同时不再重复插入封面（文章顶部只保留一张图）
         val firstImg = Regex("""!\[[^\]]*\]\(([^)\s"]+)\)""").find(content)?.groupValues?.get(1)
         val cover = if (thumb.isNotBlank() && firstImg != thumb.trim()) {
