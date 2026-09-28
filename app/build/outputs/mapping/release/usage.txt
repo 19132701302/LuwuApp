@@ -1390,6 +1390,7 @@ androidx.appcompat.app.AlertDialog$Builder:
     public androidx.appcompat.app.AlertDialog$Builder setIconAttribute(int)
     public androidx.appcompat.app.AlertDialog$Builder setInverseBackgroundForced(boolean)
     public androidx.appcompat.app.AlertDialog$Builder setItems(int,android.content.DialogInterface$OnClickListener)
+    public androidx.appcompat.app.AlertDialog$Builder setItems(java.lang.CharSequence[],android.content.DialogInterface$OnClickListener)
     public androidx.appcompat.app.AlertDialog$Builder setMessage(int)
     public androidx.appcompat.app.AlertDialog$Builder setMultiChoiceItems(int,boolean[],android.content.DialogInterface$OnMultiChoiceClickListener)
     public androidx.appcompat.app.AlertDialog$Builder setMultiChoiceItems(android.database.Cursor,java.lang.String,java.lang.String,android.content.DialogInterface$OnMultiChoiceClickListener)
@@ -19254,6 +19255,8 @@ com.luwu.app.R$drawable:
     public static int bg_search_glass
     public static int bg_search_round
     public static int bg_segment
+    public static int bg_sheet_handle
+    public static int bg_sheet_top
     public static int bg_splash_badge
     public static int bg_splash_btn
     public static int bg_splash_logo
@@ -19272,10 +19275,12 @@ com.luwu.app.R$drawable:
     public static int ic_clear_keyword
     public static int ic_close
     public static int ic_comment
+    public static int ic_copy
     public static int ic_empty_box
     public static int ic_error_outline
     public static int ic_external
     public static int ic_feedback
+    public static int ic_font
     public static int ic_handshake
     public static int ic_history
     public static int ic_home
@@ -19289,6 +19294,7 @@ com.luwu.app.R$drawable:
     public static int ic_profile
     public static int ic_publish
     public static int ic_publish_round
+    public static int ic_report
     public static int ic_search
     public static int ic_settings
     public static int ic_update
@@ -19298,6 +19304,7 @@ com.luwu.app.R$drawable:
 com.luwu.app.R$id:
     public static int bottom_bar
     public static int cat_scroll
+    public static int ll_font_seg
     public static int stats_card
     public static int stats_row
     public static int til_password
@@ -19473,6 +19480,7 @@ com.luwu.app.ui.ArticleDetailActivity:
     private static final int REQ_PAY
     private static final int REQ_SAVE_IMG
     static synthetic java.lang.String commentsTemplate$default(com.luwu.app.ui.ArticleDetailActivity,boolean,int,java.lang.Object)
+    private final void cycleFontSize()
     private final void loadFollowState(int)
 com.luwu.app.ui.CategoryPostsActivity:
     private static final java.lang.String EXTRA_MODE
@@ -27471,6 +27479,7 @@ androidx.appcompat.app.AlertController$AlertParams:
     public int mIconId
     public java.lang.String mIsCheckedColumn
     public boolean mIsMultiChoice
+    public java.lang.CharSequence[] mItems
     public java.lang.String mLabelColumn
     public android.graphics.drawable.Drawable mNegativeButtonIcon
     public android.graphics.drawable.Drawable mNeutralButtonIcon
@@ -27530,7 +27539,6 @@ androidx.appcompat.app.AlertDialog$Builder:
     public static androidx.appcompat.app.AlertDialog$Builder setCancelable()
     public static androidx.appcompat.app.AlertDialog$Builder setCustomTitle()
     public static androidx.appcompat.app.AlertDialog$Builder setIcon()
-    public static androidx.appcompat.app.AlertDialog$Builder setItems()
     public final void setMessage(java.lang.String)
     public final void setNegativeButton(java.lang.String,com.luwu.app.MainActivity$$InternalSyntheticLambda$2$503ed399b1e06e7850f1c3962d6271c6076e9c05e913b3c449f2a752cc42bd00$0)
     public static androidx.appcompat.app.AlertDialog$Builder setNeutralButton()
@@ -35645,6 +35653,9 @@ com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$3
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$4
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$1$961921828e0a1f6cdb66eee5505aa8683e76a10501ecb75386a4020d9f6df2b6$5
+com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$15d6d3328b79e39b2caa3f13f451f7dea27528facb799860ab44e203addeb936$0
+com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$15d6d3328b79e39b2caa3f13f451f7dea27528facb799860ab44e203addeb936$4
+com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$15d6d3328b79e39b2caa3f13f451f7dea27528facb799860ab44e203addeb936$5
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$d602febce8f5be5b6cc24ca71afe1b82db4e1e684b3f5fdb71964740a0b87f35$0
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$2$d602febce8f5be5b6cc24ca71afe1b82db4e1e684b3f5fdb71964740a0b87f35$2
 com.luwu.app.ui.ArticleDetailActivity$$InternalSyntheticLambda$3$da1ffb4c63a0c9dafc5efcab0ee0968c764981aca7f4b400eb7143a87a233791$1
@@ -35688,7 +35699,6 @@ com.luwu.app.ui.ArticleDetailActivity:
     public java.lang.String currentContent
     static void <clinit>()
     public static java.lang.String commentsTemplate()
-    public static void cycleFontSize()
     public static void doPay()
     public static void doUnlock()
     public final void downloadAndSaveImage(java.lang.String)

@@ -992,24 +992,54 @@ class ArticleDetailActivity : AppCompatActivity() {
     }
 
     /** 更多菜单：字号 / 分享 / 阅读原文 / 复制链接 / 举报文章（顶部右侧单按钮合并） */
+    /** 更多操作：商业级底部弹窗（字号分段控件 + 图标功能列表） */
     private fun showMoreMenu(link: String) {
-        val items = arrayOf("字号调整", "分享文章", "阅读原文", "复制链接", "举报文章")
-        androidx.appcompat.app.AlertDialog.Builder(this)
-            .setTitle("更多操作")
-            .setItems(items) { _, which ->
-                when (which) {
-                    0 -> cycleFontSize()
-                    1 -> share()
-                    2 -> Util.openBrowser(this, link)
-                    3 -> {
-                        val cm = getSystemService(CLIPBOARD_SERVICE) as android.content.ClipboardManager
-                        cm.setPrimaryClip(android.content.ClipData.newPlainText("link", link))
-                        Util.toast(this, "链接已复制")
-                    }
-                    4 -> reportPost()
-                }
+        val dialog = android.app.Dialog(this, android.R.style.Theme_DeviceDefault_Light_Dialog)
+        val v = android.view.LayoutInflater.from(this).inflate(R.layout.dialog_more_menu, null)
+        dialog.setContentView(v)
+        if (dialog.window != null) {
+            val w = dialog.window!!
+            w.setBackgroundDrawable(android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT))
+            w.setGravity(android.view.Gravity.BOTTOM)
+            w.setLayout(android.view.WindowManager.LayoutParams.MATCH_PARENT, android.view.WindowManager.LayoutParams.WRAP_CONTENT)
+            w.setDimAmount(0.4f)
+        }
+        v.findViewById<View>(R.id.btn_sheet_close).setOnClickListener { dialog.dismiss() }
+
+        // 字号分段控件：同步当前值并高亮
+        val cur = Prefs.getFontZoom(this)
+        val fontIds = listOf(R.id.font_100, R.id.font_120, R.id.font_140)
+        val fontVals = listOf(100, 120, 140)
+        fun refreshFontSeg() {
+            for (i in fontIds.indices) {
+                val tv = v.findViewById<TextView>(fontIds[i])
+                val on = fontVals[i] == cur
+                tv.setBackgroundDrawable(resources.getDrawable(if (on) R.drawable.bg_sort_on else R.drawable.bg_sort_off, null))
+                tv.setTextColor(resources.getColor(if (on) android.R.color.white else R.color.ink_2, null))
+                tv.setTypeface(if (on) android.graphics.Typeface.DEFAULT_BOLD else android.graphics.Typeface.DEFAULT)
             }
-            .show()
+        }
+        refreshFontSeg()
+        for (i in fontIds.indices) {
+            v.findViewById<TextView>(fontIds[i]).setOnClickListener {
+                val next = fontVals[i]
+                Prefs.setFontZoom(this, next)
+                webView?.settings?.textZoom = next
+                Util.toast(this, "字号 ${next}%")
+                dialog.dismiss()
+            }
+        }
+
+        v.findViewById<View>(R.id.ll_action_share).setOnClickListener { dialog.dismiss(); share() }
+        v.findViewById<View>(R.id.ll_action_original).setOnClickListener { dialog.dismiss(); Util.openBrowser(this, link) }
+        v.findViewById<View>(R.id.ll_action_copy).setOnClickListener {
+            dialog.dismiss()
+            val cm = getSystemService(CLIPBOARD_SERVICE) as android.content.ClipboardManager
+            cm.setPrimaryClip(android.content.ClipData.newPlainText("link", link))
+            Util.toast(this, "链接已复制")
+        }
+        v.findViewById<View>(R.id.ll_action_report).setOnClickListener { dialog.dismiss(); reportPost() }
+        dialog.show()
     }
 
     /** 举报文章（后端 api_report，匿名可用，IP 频控防刷） */

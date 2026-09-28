@@ -108,6 +108,8 @@ drawable bg_search_glass
 drawable bg_search_round
 drawable bg_segment
 drawable bg_segment_item_off
+drawable bg_sheet_handle
+drawable bg_sheet_top
 drawable bg_sort_off
 drawable bg_sort_on
 drawable bg_splash_badge
@@ -132,10 +134,12 @@ drawable ic_chevron_right
 drawable ic_clear_keyword
 drawable ic_close
 drawable ic_comment
+drawable ic_copy
 drawable ic_empty_box
 drawable ic_error_outline
 drawable ic_external
 drawable ic_feedback
+drawable ic_font
 drawable ic_handshake
 drawable ic_history
 drawable ic_home
@@ -151,6 +155,7 @@ drawable ic_privacy
 drawable ic_profile
 drawable ic_publish
 drawable ic_publish_round
+drawable ic_report
 drawable ic_search
 drawable ic_settings
 drawable ic_share
@@ -207,6 +212,7 @@ id btn_sc_quote
 id btn_search
 id btn_send
 id btn_share
+id btn_sheet_close
 id btn_splash_cta
 id btn_splash_skip
 id btn_submit
@@ -228,6 +234,9 @@ id et_tags
 id et_title
 id et_username
 id fav_empty
+id font_100
+id font_120
+id font_140
 id fragment_container
 id history_container
 id home_ad_container
@@ -249,7 +258,12 @@ id iv_login_avatar_wrap
 id iv_logo
 id iv_splash_ad
 id iv_top_ad
+id ll_action_copy
+id ll_action_original
+id ll_action_report
+id ll_action_share
 id ll_ad_video
+id ll_font_seg
 id loading_progress
 id menu_about
 id menu_business
@@ -391,6 +405,7 @@ layout activity_splash_ad
 layout activity_user_profile
 layout activity_webpage
 layout dialog_announcement
+layout dialog_more_menu
 layout dialog_update_progress
 layout fragment_category
 layout fragment_favorites
