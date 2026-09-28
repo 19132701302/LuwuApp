@@ -10220,6 +10220,7 @@ Marking string:category:2131755060 used because it matches string pool constant 
     @string/notify_center
     @drawable/ic_notify
     @drawable/bg_badge_red
+    @color/line_soft
     @string/ad_label
     @drawable/bg_ad_round
     @drawable/bg_banner

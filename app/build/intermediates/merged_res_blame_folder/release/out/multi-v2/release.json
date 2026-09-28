@@ -576,17 +576,16 @@
             ]
         },
         {
-            "outputFile": "/home/user/.gradle/daemon/8.5/com.luwu.app-merged_res-35:/values-watch-v20_values-watch-v20.arsc.flat",
+            "outputFile": "/home/user/.gradle/daemon/8.5/com.luwu.app-merged_res-35:/values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat",
             "map": [
                 {
-                    "source": "/home/user/.gradle/caches/transforms-3/42349fcab7a5a6a21b6eefeb34a9888a/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/home/user/.gradle/caches/transforms-3/84114cdc67145947aeae5617e585aba8/transformed/material-1.11.0/res/values-h360dp-land-v13/values-h360dp-land-v13.xml",
                     "from": {
-                        "startLines": "2,5,8",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,214,385",
-                        "endLines": "4,7,10",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "209,380,553"
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,170,226,293,358,413,478,547",
+                        "endColumns": "58,55,55,66,64,54,64,68,68",
+                        "endOffsets": "109,165,221,288,353,408,473,542,611"
                     }
                 }
             ]
@@ -635,16 +634,17 @@
             ]
         },
         {
-            "outputFile": "/home/user/.gradle/daemon/8.5/com.luwu.app-merged_res-35:/values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat",
+            "outputFile": "/home/user/.gradle/daemon/8.5/com.luwu.app-merged_res-35:/values-watch-v20_values-watch-v20.arsc.flat",
             "map": [
                 {
-                    "source": "/home/user/.gradle/caches/transforms-3/84114cdc67145947aeae5617e585aba8/transformed/material-1.11.0/res/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+                    "source": "/home/user/.gradle/caches/transforms-3/42349fcab7a5a6a21b6eefeb34a9888a/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,170,226,293,358,413,478,547",
-                        "endColumns": "58,55,55,66,64,54,64,68,68",
-                        "endOffsets": "109,165,221,288,353,408,473,542,611"
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
                     }
                 }
             ]
@@ -766,21 +766,6 @@
             ]
         },
         {
-            "outputFile": "/home/user/.gradle/daemon/8.5/com.luwu.app-merged_res-35:/values-ldrtl-v17_values-ldrtl-v17.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/user/.gradle/caches/transforms-3/84114cdc67145947aeae5617e585aba8/transformed/material-1.11.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,191",
-                        "endColumns": "135,140",
-                        "endOffsets": "186,327"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/user/.gradle/daemon/8.5/com.luwu.app-merged_res-35:/values-es_values-es.arsc.flat",
             "map": [
                 {
@@ -834,6 +819,21 @@
                         "endLines": "5,33,34,35,36,37,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107",
                         "endColumns": "12,80,78,86,100,95,103,121,80,64,94,80,62,88,63,68,62,73,63,55,117,57,61,55,79,138,88,81,140,80,79,150,89,79,55,55,65,78,81,87,88,73,76,69,78,99,83,83,91,99,73,80,101,52,84,66,92,88,61,63,62,67,112,106,103,100,59,59,82",
                         "endOffsets": "323,3135,3214,3301,3402,3498,4334,4456,4537,4602,4697,4778,4841,4930,4994,5063,5126,5200,5264,5320,5438,5496,5558,5614,5694,5833,5922,6004,6145,6226,6306,6457,6547,6627,6683,6739,6805,6884,6966,7054,7143,7217,7294,7364,7443,7543,7627,7711,7803,7903,7977,8058,8160,8213,8298,8365,8458,8547,8609,8673,8736,8804,8917,9024,9128,9229,9289,9349,9432"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/user/.gradle/daemon/8.5/com.luwu.app-merged_res-35:/values-ldrtl-v17_values-ldrtl-v17.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/user/.gradle/caches/transforms-3/84114cdc67145947aeae5617e585aba8/transformed/material-1.11.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
                     }
                 }
             ]
